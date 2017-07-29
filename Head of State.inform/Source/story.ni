@@ -1,6 +1,6 @@
 "Head of State" by Tom Davies
 
-The story description is "The new Head of State of our great nation attempts to cling on to power, but it's slowly slipping through his fingers." 
+The story description is "The new Head of State for our great nation attempts to cling on to power, but it's slowly slipping through his fingers." 
 
 Include Hybrid Choices by AW Freyr
 
@@ -10,7 +10,7 @@ When play begins, say "------
 
 TODAY'S NEWSPAPER FRONT PAGE
 
-In a shocking last minute swing, the country voted for a candidate who, only days ago, looked to be almost totally unelectable. The candidate only recently entered politics and belongs to a fringe party, 'Imperium', which has never previously garnered more than a few percent of the vote.
+In a shocking last minute swing, the country voted for a candidate who, only days ago, looked to be almost totally unelectable. The candidate only recently entered politics and now leads a fringe party, 'Imperium', which has never previously garnered more than a few percent of the vote.
 
 Politics isn't what it once was. These are volatile times and the people are eager for a leader who can change things. It's not clear what the voters want - it's not even clear that *they* know what they want - but it's clear the status quo is not it.
 
@@ -43,12 +43,6 @@ After looking for the first time:
 
 Every turn:
      now the left hand status line is "Political power: [current political power]/[maximum political power] stars";
-
-[TODO REMOVE IN PROD]
-After looking for the first time:
-     now the right hand status line is "[current_game_state]";
-Every turn:
-     now the right hand status line is "[current_game_state]";
 
 Section - The Official Office
 

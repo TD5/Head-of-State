@@ -23,7 +23,7 @@ placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2017"
 placeholder [TITLE] = "Head of State"
 placeholder [AUTHOR] = "Tom Davies"
-placeholder [BLURB] = "The new Head of State of our great nation attempts to cling on to power, but it's slowly slipping through his fingers."
+placeholder [BLURB] = "The new Head of State for our great nation attempts to cling on to power, but it's slowly slipping through his fingers."
 
 ! Other material to release
 
