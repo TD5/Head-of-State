@@ -6,11 +6,13 @@ Release along with an interpreter.
 
 When play begins, say "------
 
-TODAY'S NEWSPAPER HEADLINE
+TODAY'S NEWSPAPER FRONT PAGE
 
 In a shocking last minute swing, the country voted for a candidate who, only days ago, looked to be almost totally unelectable. The candidate only recently entered politics and belongs to a fringe party which has never previously garnered more than a few percent of the vote.
 
 Politics isn't what it once was. These are volatile times and the people are eager for a leader who can change things. It's not clear what the voters want - it's not even clear that *they* know what they want - but it's clear the status quo is not it.
+
+Thanks to his landslide victory, the new Head of State currently has a political power of [current political power]/[maximum political power] stars, according to our new rating. Be sure to follow this number throughout his sure-to-be 'exciting' tenure!
 
 ------
 
@@ -25,6 +27,16 @@ You're going to have to work hard if you want to stay in power: It's already beg
 
 Instead of examining the player: 
     say "A droopy face, too much makeup, a bit on the heavy side. Not that you are willing to acknowledge any of the negatives. You're important. You've always been important. If someone disagrees with you they must be wrong - and your expression makes that clear."
+
+The maximum political power is a number that varies. The maximum political power is 5.
+The minimum political power is a number that varies. The minimum political power is 5.
+The current political power is a number that varies. The current political power is 5.
+
+After looking for the first time:
+     now the left hand status line is "Political power: [current political power]/[maximum political power] stars";
+
+Every turn:
+     now the left hand status line is "Political power: [current political power]/[maximum political power] stars";
 
 Section - The Official Office
 
@@ -50,6 +62,6 @@ The portraits are scenery in the official office. Description is "These are the 
 
 The chair of the head of state is scenery in the official office. Description is "Your chair of the Head of State isn't too far from looking like a throne. When you picked your furniture it was important that your choice sent a message, and your message was a clear one of power, wealth and ruthlessness."
 
-A letter is on the desk. Description is "It's an offical document. A bill that needs your approval if it is to survive. Something about funding for healthcare for the poorest and most needy citizens of this great country: Not something you are known for supporting."
+The bill is carried by Martin Gravell. Description is "It's an offical document. A bill that needs your approval if it is to survive. Something about funding for healthcare for the poorest and most needy citizens of this great country: Not something you are known for supporting."
 
 Martin Gravell is a man in the official office. "Your senior advisor, Martin Gravell, stands patiently in front of your desk." Description is "Gravell is your right-hand man. He's loyal and he knows how to keep his mouth shut."

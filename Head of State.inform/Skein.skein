@@ -9,11 +9,13 @@
 
 ------
 
-TODAY'S NEWSPAPER HEADLINE
+TODAY'S NEWSPAPER FRONT PAGE
 
 In a shocking last minute swing, the country voted for a candidate who, only days ago, looked to be almost totally unelectable. The candidate only recently entered politics and belongs to a fringe party which has never previously garnered more than a few percent of the vote.
 
 Politics isn't what it once was. These are volatile times and the people are eager for a leader who can change things. It's not clear what the voters want - it's not even clear that *they* know what they want - but it's clear the status quo is not it.
+
+Thanks to his landslide victory, the new Head of State currently has a political power of 5/5 stars, according to our new rating. Be sure to follow this number throughout his sure-to-be exciting tenure!
 
 ------
 
@@ -37,23 +39,32 @@ Portraits of stern old white men hang on the walls, a huge candelier hangs down 
 
 The things some men have done to make it to this room...
 
-On the desk is a letter.
-
-Your senior advisor, Martin Gravell, stands in front of your desk.
+Your senior advisor, Martin Gravell, stands patiently in front of your desk.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1168"></child>
+        <children><child nodeId="node-1184"></child>
+            <child nodeId="node-1183"></child>
+            <child nodeId="node-1179"></child>
+            <child nodeId="node-1168"></child>
             <child nodeId="node-1178"></child>
             <child nodeId="node-1176"></child>
             <child nodeId="node-1172"></child>
             <child nodeId="node-1171"></child>
+            <child nodeId="node-1182"></child>
             <child nodeId="node-1170"></child>
         </children>
     </item>
     <item nodeId="node-1170">
         <command xml:space="preserve">take desk</command>
         <result xml:space="preserve">That's hardly portable.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1182">
+        <command xml:space="preserve">examine the bill</command>
+        <result xml:space="preserve">It's an offical document. A bill that needs your approval if it is to survive. Something about funding for healthcare for the poorest and most needy citizens of this great country: Not something you are known for supporting.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -125,6 +136,72 @@ Your senior advisor, Martin Gravell, stands in front of your desk.
     <item nodeId="node-1169">
         <command xml:space="preserve">examine letter</command>
         <result xml:space="preserve">An offical document. A bill that needs your approval if it is to survive. Something about funding for healthcare for the poor: Not something you are known for supporting.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1179">
+        <command xml:space="preserve">examine gravell</command>
+        <result xml:space="preserve">Gravell is your right-hand man. He's loyal and he knows how to keep his mouth shut.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1180"></child>
+        </children>
+    </item>
+    <item nodeId="node-1180">
+        <command xml:space="preserve">look at gravell</command>
+        <result xml:space="preserve">Gravell is your right-hand man. He's loyal and he knows how to keep his mouth shut.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1181"></child>
+        </children>
+    </item>
+    <item nodeId="node-1181">
+        <command xml:space="preserve">examine the bill</command>
+        <result xml:space="preserve">It's an offical document. A bill that needs your approval if it is to survive. Something about funding for healthcare for the poorest and most needy citizens of this great country: Not something you are known for supporting.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1183">
+        <command xml:space="preserve">check political power</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1184">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1185"></child>
+        </children>
+    </item>
+    <item nodeId="node-1185">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1186"></child>
+        </children>
+    </item>
+    <item nodeId="node-1186">
+        <command xml:space="preserve">examine room</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1187"></child>
+        </children>
+    </item>
+    <item nodeId="node-1187">
+        <command xml:space="preserve">examine desk</command>
+        <result xml:space="preserve">Heavy and ancient. Clearly well used, but in fantastic condition nonetheless.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
