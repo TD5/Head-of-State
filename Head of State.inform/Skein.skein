@@ -45,6 +45,7 @@ Your senior advisor, Martin Gravell, stands patiently in front of your desk.
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1184"></child>
             <child nodeId="node-1183"></child>
+            <child nodeId="node-1188"></child>
             <child nodeId="node-1179"></child>
             <child nodeId="node-1168"></child>
             <child nodeId="node-1178"></child>
@@ -52,12 +53,46 @@ Your senior advisor, Martin Gravell, stands patiently in front of your desk.
             <child nodeId="node-1172"></child>
             <child nodeId="node-1171"></child>
             <child nodeId="node-1182"></child>
+            <child nodeId="node-1190"></child>
             <child nodeId="node-1170"></child>
         </children>
     </item>
     <item nodeId="node-1170">
         <command xml:space="preserve">take desk</command>
         <result xml:space="preserve">That's hardly portable.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1190">
+        <command xml:space="preserve">look at gravell</command>
+        <result xml:space="preserve">Gravell is your right-hand man. He's loyal and he knows how to keep his mouth shut.
+
+You nod to Gravell.
+
+Gravell: "Sir, the healthcare bill requires your attention"
+
+1) Just grunt.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1191"></child>
+        </children>
+    </item>
+    <item nodeId="node-1191">
+        <command xml:space="preserve">1</command>
+        <result xml:space="preserve">[Just grunt.]
+
+You grunt to indicate that he can continue.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1192"></child>
+        </children>
+    </item>
+    <item nodeId="node-1192">
+        <command xml:space="preserve">0</command>
+        <result xml:space="preserve">There is no choice corresponding to that number.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -144,9 +179,15 @@ Your senior advisor, Martin Gravell, stands patiently in front of your desk.
         <command xml:space="preserve">examine gravell</command>
         <result xml:space="preserve">Gravell is your right-hand man. He's loyal and he knows how to keep his mouth shut.
 
+You nod to Gravell.
+
+Gravell: "Sir, the healthcare bill requires your attention"
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1180"></child>
+        <children><child nodeId="node-1200"></child>
+            <child nodeId="node-1194"></child>
+            <child nodeId="node-1180"></child>
         </children>
     </item>
     <item nodeId="node-1180">
@@ -161,6 +202,75 @@ Your senior advisor, Martin Gravell, stands patiently in front of your desk.
     <item nodeId="node-1181">
         <command xml:space="preserve">examine the bill</command>
         <result xml:space="preserve">It's an offical document. A bill that needs your approval if it is to survive. Something about funding for healthcare for the poorest and most needy citizens of this great country: Not something you are known for supporting.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1194">
+        <command xml:space="preserve">1</command>
+        <result xml:space="preserve">[Just grunt.]
+
+You grunt to indicate that he can continue.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1200">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1188">
+        <command xml:space="preserve">examine Gravell</command>
+        <result xml:space="preserve">Gravell is your right-hand man. He's loyal and he knows how to keep his mouth shut.
+
+You nod to Gravell.
+
+Gravell: "Sir, the healthcare bill requires your attention"
+
+1) Just grunt.
+2) Ask him to continue.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1189"></child>
+            <child nodeId="node-1196"></child>
+        </children>
+    </item>
+    <item nodeId="node-1196">
+        <command xml:space="preserve">2</command>
+        <result xml:space="preserve">[Ask him to continue.]
+
+You: "Go ahead, Gravell."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1197"></child>
+        </children>
+    </item>
+    <item nodeId="node-1197">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1198"></child>
+        </children>
+    </item>
+    <item nodeId="node-1198">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1189">
+        <command xml:space="preserve">1</command>
+        <result xml:space="preserve">[Just grunt.]
+
+You grunt.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

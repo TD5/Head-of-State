@@ -39,6 +39,8 @@ After looking for the first time:
 Every turn:
      now the left hand status line is "Political power: [current political power]/[maximum political power] stars";
 
+GameState is a kind of value. The GameStates are WaitingForIntroduction, WaitingForBillSigning and HandleQuipScandle. It is usually WaitingForIntroduction.
+
 Section - The Official Office
 
 The Official Office is a room. "Your office probably doesn't look much different now to how it did when each of your predecessors occupied it over the last century.
@@ -67,6 +69,20 @@ The bill is carried by Martin Gravell. Description is "It's an offical document.
 
 Martin Gravell is a man in the official office. "Your senior advisor, Martin Gravell, stands patiently in front of your desk." Description is "Gravell is your right-hand man. He's loyal and he knows how to keep his mouth shut."
 
-[Instead of asking Gravell:
-	switch to cyoa at Introduction]
+Talking is an action applying to one visible thing.
+
+After examining Gravell:
+	If GameState is WaitingForIntroduction:
+		switch to cyoa at P-Introduction
 	
+P-Introduction is a page. It is a one-off.
+"You nod to Gravell.
+
+Gravell: 'Sir, the healthcare bill requires your attention'"
+
+P-Grunt is a page.
+"You grunt to indicate that he can continue."
+The cdesc is "Just grunt.". It is for P-Introduction.
+P-GoAhead is a page.
+"You: 'Go ahead, Gravell.'"
+The cdesc is "Ask him to continue.". It is for P-Introduction.
