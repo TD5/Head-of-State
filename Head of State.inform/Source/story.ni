@@ -1,9 +1,10 @@
 "Head of State" by Tom Davies
 
+The story description is "The new Head of State of our great nation attempts to cling on to power, but it's slowly slipping through his fingers." 
+
 Include Hybrid Choices by AW Freyr
 
-Release along with an interpreter.
-Release along with cover art.
+Release along with an interpreter, cover art and a "LudumDare" website.
 
 When play begins, say "------
 
