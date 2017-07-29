@@ -13,7 +13,7 @@ TODAY'S NEWSPAPER HEADLINE
 
 In a shocking last minute swing, the country voted for a candidate who, only days ago, looked to be almost totally unelectable. The candidate only recently entered politics and belongs to a fringe party which has never previously garnered more than a few percent of the vote.
 
-Politics isn't what it once was. These are volatile times and the people are eager for a leader who can change things. It's not clear what the voters want - it's not even clear that _they_ know what they want - but it's clear the status quo is not it.
+Politics isn't what it once was. These are volatile times and the people are eager for a leader who can change things. It's not clear what the voters want - it's not even clear that *they* know what they want - but it's clear the status quo is not it.
 
 ------
 
@@ -22,7 +22,7 @@ Politics isn't what it once was. These are volatile times and the people are eag
 
 You stand looking out of the window.
 
-So here we are. You are the new head of state who has had a meteoric rise to the highest office in the land, but the will of the people is a fickle thing, and you are no run-of-the-mill politican. Scandles are popping up left, right and centre; your staff are leaking damaging comments; the established parties hate you; the media is lapping it up.
+So here we are. You are the new Head of State who has had a meteoric rise to the highest office in the land, but the will of the people is a fickle thing, and you are no run-of-the-mill politican. Scandles are popping up left, right and centre; your staff are leaking damaging comments; the established parties hate you; the media is lapping it up.
 
 You're going to have to work hard if you want to stay in power: It's already beginning to slip through your fingers...
 
@@ -33,7 +33,88 @@ Release 1 / Serial number 170729 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 Official Office
 Your office probably doesn't look much different now to how it did when each of your predecessors occupied it over the last century.
 
+Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
+
+The things some men have done to make it to this room...
+
 On the desk is a letter.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1168"></child>
+            <child nodeId="node-1176"></child>
+            <child nodeId="node-1172"></child>
+            <child nodeId="node-1171"></child>
+            <child nodeId="node-1170"></child>
+        </children>
+    </item>
+    <item nodeId="node-1170">
+        <command xml:space="preserve">take desk</command>
+        <result xml:space="preserve">That's hardly portable.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1171">
+        <command xml:space="preserve">examine portrait</command>
+        <result xml:space="preserve">These are the people who led this country since its foundation over one hundred years ago. I'm better and smarter than them.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1172">
+        <command xml:space="preserve">examine portait</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1173"></child>
+        </children>
+    </item>
+    <item nodeId="node-1173">
+        <command xml:space="preserve">examine portait</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1174"></child>
+        </children>
+    </item>
+    <item nodeId="node-1174">
+        <command xml:space="preserve">examine portaits</command>
+        <result xml:space="preserve">These are the people who led this country since its foundation over one hundred years ago. I'm better and smarter than them.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1176">
+        <command xml:space="preserve">examine myself</command>
+        <result xml:space="preserve">A droopy face, too much makeup, a bit on the heavy side. Not that you are willing to acknowledge any of the negatives. You're important. You've always been important. If someone disagrees with you they must be wrong - and your expression shows it.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1177"></child>
+        </children>
+    </item>
+    <item nodeId="node-1177">
+        <command xml:space="preserve">look at myself</command>
+        <result xml:space="preserve">A droopy face, too much makeup, a bit on the heavy side. Not that you are willing to acknowledge any of the negatives. You're important. You've always been important. If someone disagrees with you they must be wrong - and your expression shows it.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1168">
+        <command xml:space="preserve">examine kletter</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1169"></child>
+        </children>
+    </item>
+    <item nodeId="node-1169">
+        <command xml:space="preserve">examine letter</command>
+        <result xml:space="preserve">An offical document. A bill that needs your approval if it is to survive. Something about funding for healthcare for the poor: Not something you are known for supporting.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
