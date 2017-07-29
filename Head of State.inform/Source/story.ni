@@ -2,7 +2,8 @@
 
 The story description is "The new Head of State for our great nation attempts to cling on to power, but it's slowly slipping through his fingers." 
 
-Include Hybrid Choices by AW Freyr
+Include Hybrid Choices by AW Freyr.
+Include Basic Help Menu by Emily Short.
 
 Release along with an interpreter, cover art and a "LudumDare" website.
 
@@ -35,6 +36,12 @@ The minimum political power is a number that varies. The minimum political power
 The current political power is a number that varies. The current political power is 5.
 
 A game state is a kind of value. The game states are WaitingForIntroduction, WaitingForBillSigning and HandlingBriberyScandal. It is usually WaitingForIntroduction.
+
+When play begins:
+     choose row 1 in Table of Basic Help Options;
+     now description entry is "This is a text-based game created for LudumDare 39, 'Running out of Power'.
+
+The goal is to keep your grip on power as various damaging scenarios play out during your tenure as Head of State."
 
 The current_game_state is a game state that varies. The current_game_state is initially WaitingForIntroduction.
 
@@ -122,17 +129,24 @@ Section - The Signing
 [TODO Fix the logic below by separating out logic for signing or destroying the bill]
 Instead of signing the bill:
 	If current_game_state is not WaitingForIntroduction:
-		[TODO Change game state]
 		If the signedness of the bill is unsigned:
-			say "You sign the bill into law.";
+			[TODO Some text about the press coming to see your surprising bill passing]
+			say "You sign the bill into law and an aid takes it away for safe keeping.";
 			now the signedness of the bill is signed;
-		[TODO Newspaper headline - no change in power]
-		otherwise:
-			say "You rip up the bill and throw it away.";
-			remove the bill from play;
+			[TODO Remove bill from game]
 			[TODO Newspaper headline - no change in power]
+			[TODO New game state]
+		otherwise:
+			say "Why would I do that?";
 	otherwise:
 		say "Why would I do that?".
+
+[TODO]	
+[otherwise:
+	say "You rip up the bill and throw it away.";
+	remove the bill from play;
+	[TODO Newspaper headline - no change in power / hippies shouting]
+	[TODO New game state]]
 
 [TODO Nudge if they've not signed it for 5 turns: "Gavell: 'Sir, will you be signing the healthcare bill?'"]
 

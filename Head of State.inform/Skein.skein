@@ -30,7 +30,7 @@ You're going to have to work hard if you want to stay in power: It's already beg
 
 Head of State
 An Interactive Fiction by Tom Davies
-Release 1 / Serial number 170729 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) 
+Release 1 / Serial number 170729 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Official Office
 Your office probably doesn't look much different now to how it did when each of your predecessors occupied it over the last century.
@@ -62,6 +62,8 @@ Your senior advisor, Martin Gavell, stands patiently in front of your desk. It l
             <child nodeId="node-1228"></child>
             <child nodeId="node-1226"></child>
             <child nodeId="node-1182"></child>
+            <child nodeId="node-1439"></child>
+            <child nodeId="node-1441"></child>
             <child nodeId="node-1190"></child>
             <child nodeId="node-1434"></child>
             <child nodeId="node-1435"></child>
@@ -211,6 +213,47 @@ You grunt to indicate that he can continue.
     <item nodeId="node-1192">
         <command xml:space="preserve">0</command>
         <result xml:space="preserve">There is no choice corresponding to that number.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1441">
+        <command xml:space="preserve">info</command>
+        <result xml:space="preserve"> &gt; Introduction to Head of State
+   Instructions for Play
+ &gt; Introduction to Head of State
+   Instructions for Play
+</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1439">
+        <command xml:space="preserve">help</command>
+        <result xml:space="preserve">
+Official Office
+Your office probably doesn't look much different now to how it did when each of your predecessors occupied it over the last century.
+
+Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
+
+The things some men have done to make it to this room...
+
+Your senior advisor, Martin Gavell, stands patiently in front of your desk. It looks like he's waiting for you to speak to him.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1440"></child>
+        </children>
+    </item>
+    <item nodeId="node-1440">
+        <command xml:space="preserve">hints</command>
+        <result xml:space="preserve">
+Official Office
+Your office probably doesn't look much different now to how it did when each of your predecessors occupied it over the last century.
+
+Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
+
+The things some men have done to make it to this room...
+
+Your senior advisor, Martin Gavell, stands patiently in front of your desk. It looks like he's waiting for you to speak to him.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
