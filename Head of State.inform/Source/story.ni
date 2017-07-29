@@ -33,13 +33,21 @@ The maximum political power is a number that varies. The maximum political power
 The minimum political power is a number that varies. The minimum political power is 5.
 The current political power is a number that varies. The current political power is 5.
 
+A game state is a kind of value. The game states are WaitingForIntroduction, WaitingForBillSigning and HandleQuipScandle. It is usually WaitingForIntroduction.
+
+The current_game_state is a game state that varies. The current_game_state is initially WaitingForIntroduction.
+
 After looking for the first time:
      now the left hand status line is "Political power: [current political power]/[maximum political power] stars";
 
 Every turn:
      now the left hand status line is "Political power: [current political power]/[maximum political power] stars";
 
-GameState is a kind of value. The GameStates are WaitingForIntroduction, WaitingForBillSigning and HandleQuipScandle. It is usually WaitingForIntroduction.
+[TODO REMOVE IN PROD]
+After looking for the first time:
+     now the right hand status line is "[current_game_state]";
+Every turn:
+     now the right hand status line is "[current_game_state]";
 
 Section - The Official Office
 
@@ -53,7 +61,7 @@ Instead of smelling the official office, say "The scent of tobacco smoke and bra
 
 A window is scenery in the official office. It is fixed in place. Description is "The huge bay window provides a view of the lawn at the front of the building. The glass is immaculate. These windows are cleaned whenever the room isn't occupied."
 
-A desk is scenery in the official office. Description is "Heavy and ancient. Clearly well used, but in fantastic condition nonetheless." Instead of taking the desk: say "The desk is far too heavy."
+The desk is scenery in the official office. Description is "Heavy and ancient. Clearly well used, but in fantastic condition nonetheless." Instead of taking the desk: say "The desk is far too heavy."
 
 The lawn is scenery in the official office. Description is "Green and luscious. The riff-raff are behind the fence on the otherside of this." Instead of taking the desk: say "That's stupid."
 
@@ -65,20 +73,20 @@ The portraits are scenery in the official office. Description is "These are the 
 
 The chair of the head of state is scenery in the official office. Description is "Your chair of the Head of State isn't too far from looking like a throne. When you picked your furniture it was important that your choice sent a message, and your message was a clear one of power, wealth and ruthlessness."
 
-The bill is carried by Martin Gravell. Description is "It's an offical document. A bill that needs your approval if it is to survive. Something about funding for healthcare for the poorest and most needy citizens of this great country: Not something you are known for supporting."
+The healthcare bill is carried by Martin Gravell. Description is "It's an offical document. A bill that needs your approval if it is to survive. Something about funding for healthcare for the poorest and most needy citizens of this great country: Not something you are known for supporting."
 
 Martin Gravell is a man in the official office. "Your senior advisor, Martin Gravell, stands patiently in front of your desk." Description is "Gravell is your right-hand man. He's loyal and he knows how to keep his mouth shut."
 
 Section - Introduction
 
 After examining Gravell:
-	If GameState is WaitingForIntroduction:
+	If current_game_state is WaitingForIntroduction:
 		switch to cyoa at P-Introduction
 	
 P-Introduction is a page. It is a one-off.
 "You nod to Gravell.
 
-Gravell: 'Sir, the healthcare bill requires your attention'"
+Gravell: 'Sir, the healthcare bill requires your attention.'"
 
 P-Grunt is a page. It is for P-Introduction.
 "You grunt to indicate that he can continue."
@@ -86,10 +94,17 @@ It flips to P-IntroductionGiven.
 The cdesc is "Just grunt.".
 
 P-LeaveBillOnDesk is a page. It is for P-Introduction.
-"You: 'Leave it on my desk, Gravell.'"
+"You: 'Hand it over, Gravell.'"
 It flips to P-IntroductionGiven.
-The cdesc is "Ask him to leave it on your desk.".
+The cdesc is "Ask for the bill.".
 
 P-IntroductionGiven is a page. It is flipped to by P-Grunt and P-LeaveBillOnDesk. It is an end-page.
-"Gravell: 'Very good, Sir.'".
-now the bill is on the desk.
+"Gravell: 'Here you are, Sir.'
+
+Gravell gives the bill to you.".
+A page-toggle rule for P-IntroductionGiven:
+	now the current_game_state is WaitingForBillSigning;
+	now the player carries the healthcare bill.
+
+P-NudgeForBillSigning is a page. It is a one-off.
+"Gravell: 'Sir, will you be signing the healthcare bill?'"
