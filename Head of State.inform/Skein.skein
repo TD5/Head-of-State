@@ -47,6 +47,7 @@ Your senior advisor, Martin Gravell, stands patiently in front of your desk.
             <child nodeId="node-1183"></child>
             <child nodeId="node-1188"></child>
             <child nodeId="node-1220"></child>
+            <child nodeId="node-1425"></child>
             <child nodeId="node-1232"></child>
             <child nodeId="node-1179"></child>
             <child nodeId="node-1168"></child>
@@ -606,6 +607,44 @@ Your senior advisor, Martin Gravell, stands patiently in front of your desk.
     <item nodeId="node-1248">
         <command xml:space="preserve">examine desk</command>
         <result xml:space="preserve">Heavy and ancient. Clearly well used, but in fantastic condition nonetheless.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1425">
+        <command xml:space="preserve">examine advisor</command>
+        <result xml:space="preserve">Gravell is your right-hand man. He's loyal and he knows how to keep his mouth shut.
+
+You nod to Gravell.
+
+Gravell: "Sir, the healthcare bill requires your attention."
+
+1) Just grunt.
+2) Ask for the bill.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1426"></child>
+        </children>
+    </item>
+    <item nodeId="node-1426">
+        <command xml:space="preserve">1</command>
+        <result xml:space="preserve">[Just grunt.]
+
+You grunt to indicate that he can continue.
+
+Gravell: "Here you are, Sir."
+
+Gravell gives the bill to you.
+
+Official Office
+Your office probably doesn't look much different now to how it did when each of your predecessors occupied it over the last century.
+
+Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
+
+The things some men have done to make it to this room...
+
+Your senior advisor, Martin Gravell, stands patiently in front of your desk.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
