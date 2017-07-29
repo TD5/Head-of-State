@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<Skein rootNode="node-1002">
+    <generator>Inform Mac Client (Inform version 1.65/6.33/6M62)</generator>
+    <item nodeId="node-1002">
+        <command xml:space="preserve">Head of State</command>
+        <result xml:space="preserve">
+
+
+------
+
+TODAY'S NEWSPAPER HEADLINE
+
+In a shocking last minute swing, the country voted for a candidate who, only days ago, looked to be almost totally unelectable. The candidate only recently entered politics and belongs to a fringe party which has never previously garnered more than a few percent of the vote.
+
+Politics isn't what it once was. These are volatile times and the people are eager for a leader who can change things. It's not clear what the voters want - it's not even clear that _they_ know what they want - but it's clear the status quo is not it.
+
+------
+
+
+
+
+You stand looking out of the window.
+
+So here we are. You are the new head of state who has had a meteoric rise to the highest office in the land, but the will of the people is a fickle thing, and you are no run-of-the-mill politican. Scandles are popping up left, right and centre; your staff are leaking damaging comments; the established parties hate you; the media is lapping it up.
+
+You're going to have to work hard if you want to stay in power: It's already beginning to slip through your fingers...
+
+Head of State
+An Interactive Fiction by Tom Davies
+Release 1 / Serial number 170729 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Official Office
+Your office probably doesn't look much different now to how it did when each of your predecessors occupied it over the last century.
+
+On the desk is a letter.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+</Skein>
