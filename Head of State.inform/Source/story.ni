@@ -10,7 +10,7 @@ When play begins, say "------
 
 TODAY'S NEWSPAPER FRONT PAGE
 
-In a shocking last minute swing, the country voted for a candidate who, only days ago, looked to be almost totally unelectable. The candidate only recently entered politics and belongs to a fringe party which has never previously garnered more than a few percent of the vote.
+In a shocking last minute swing, the country voted for a candidate who, only days ago, looked to be almost totally unelectable. The candidate only recently entered politics and belongs to a fringe party, 'Imperium', which has never previously garnered more than a few percent of the vote.
 
 Politics isn't what it once was. These are volatile times and the people are eager for a leader who can change things. It's not clear what the voters want - it's not even clear that *they* know what they want - but it's clear the status quo is not it.
 
@@ -77,6 +77,7 @@ The chair of the head of state is scenery in the official office. Description is
 The healthcare bill is carried by Martin Gravell. Description is "It's an offical document. A bill that needs your approval if it is to survive. Something about funding for healthcare for the poorest and most needy citizens of this great country: Not something you are known for supporting."
 
 Martin Gravell is a man in the official office. "Your senior advisor, Martin Gravell, stands patiently in front of your desk." Description is "Gravell is your right-hand man. He's loyal and he knows how to keep his mouth shut."
+Understand "advisor" as Martin Gravell.
 
 Section - Introduction
 

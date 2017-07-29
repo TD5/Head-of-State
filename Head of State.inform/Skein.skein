@@ -11,7 +11,7 @@
 
 TODAY'S NEWSPAPER FRONT PAGE
 
-In a shocking last minute swing, the country voted for a candidate who, only days ago, looked to be almost totally unelectable. The candidate only recently entered politics and belongs to a fringe party which has never previously garnered more than a few percent of the vote.
+In a shocking last minute swing, the country voted for a candidate who, only days ago, looked to be almost totally unelectable. The candidate only recently entered politics and belongs to a fringe party, "Imperium", which has never previously garnered more than a few percent of the vote.
 
 Politics isn't what it once was. These are volatile times and the people are eager for a leader who can change things. It's not clear what the voters want - it's not even clear that *they* know what they want - but it's clear the status quo is not it.
 
@@ -52,6 +52,7 @@ Your senior advisor, Martin Gravell, stands patiently in front of your desk.
             <child nodeId="node-1168"></child>
             <child nodeId="node-1212"></child>
             <child nodeId="node-1178"></child>
+            <child nodeId="node-1260"></child>
             <child nodeId="node-1176"></child>
             <child nodeId="node-1203"></child>
             <child nodeId="node-1172"></child>
@@ -262,6 +263,22 @@ You grunt to indicate that he can continue.
     <item nodeId="node-1177">
         <command xml:space="preserve">look at myself</command>
         <result xml:space="preserve">A droopy face, too much makeup, a bit on the heavy side. Not that you are willing to acknowledge any of the negatives. You're important. You've always been important. If someone disagrees with you they must be wrong - and your expression shows it.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1260">
+        <command xml:space="preserve">examine my advisor</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1261"></child>
+        </children>
+    </item>
+    <item nodeId="node-1261">
+        <command xml:space="preserve">examine advisor</command>
+        <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

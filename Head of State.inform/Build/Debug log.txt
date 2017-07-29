@@ -1,5 +1,5 @@
 Debugging log of Inform 7
-Inform called as: /Applications/Inform.app/Contents/MacOS/ni -internal /Applications/Inform.app/Contents/Resources/Internal -external /Users/tom/Library/Inform -project /Users/tom/Documents/Games/Interactive Fiction/Head of State/Head of State.inform -format=ulx -release
+Inform called as: /Applications/Inform.app/Contents/MacOS/ni -internal /Applications/Inform.app/Contents/Resources/Internal -external /Users/tom/Library/Inform -project /Users/tom/Documents/Games/Interactive Fiction/Head of State/Head of State.inform -format=ulx
 Found language bundle 'English' (built in)
 Found language bundle 'French' (built in)
 Found language bundle 'German' (built in)
@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app/Contents/Resources/In
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 1082 words long.
+I've now read your source text, which is 1088 words long.
 
 
 -----------------------------------------------------
@@ -175,7 +175,7 @@ Providing for a total heap of 8192, given requirement of 8192
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 110 files written as streams.
+Total of 111 files written as streams.
 CPU time: 167 centiseconds
 
 
