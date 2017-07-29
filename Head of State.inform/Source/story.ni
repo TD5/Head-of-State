@@ -23,7 +23,7 @@ Thanks to his landslide victory, the new Head of State currently has a political
 
 You stand looking out of the window.
 
-So here we are. You are the new Head of State who has had a meteoric rise to the highest office in the land, but the will of the people is a fickle thing, and you are no run-of-the-mill politican. Scandles are popping up left, right and centre; your staff are leaking damaging comments; the established parties hate you; the media is lapping it up.
+So here we are. You are the new Head of State who has had a meteoric rise to the highest office in the land, but the will of the people is a fickle thing, and you are no run-of-the-mill politican. Scandals are popping up left, right and centre; your staff are leaking damaging comments; the established parties hate you; the media is lapping it up.
 
 You're going to have to work hard if you want to stay in power: It's already beginning to slip through your fingers..."
 
@@ -34,7 +34,7 @@ The maximum political power is a number that varies. The maximum political power
 The minimum political power is a number that varies. The minimum political power is 5.
 The current political power is a number that varies. The current political power is 5.
 
-A game state is a kind of value. The game states are WaitingForIntroduction, WaitingForBillSigning and HandlingBriberyScandle. It is usually WaitingForIntroduction.
+A game state is a kind of value. The game states are WaitingForIntroduction, WaitingForBillSigning and HandlingBriberyScandal. It is usually WaitingForIntroduction.
 
 The current_game_state is a game state that varies. The current_game_state is initially WaitingForIntroduction.
 
@@ -136,6 +136,6 @@ Instead of signing the bill:
 [TODO Nudge if they've not signed it for 5 turns: "Gavell: 'Sir, will you be signing the healthcare bill?'"]
 
 	
-Section - The Bribery Scandle
+Section - The Bribery Scandal
 
 [TODO]

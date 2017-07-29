@@ -18,22 +18,22 @@
     </dict>
     <key>2</key><dict>
         <key>Filename</key><string>/Users/tom/Documents/Games/Interactive Fiction/Head of State/Head of State.inform/Source/story.ni</string>
-        <key>Line</key><integer>87</integer>
+        <key>Line</key><integer>89</integer>
         <key>Title</key><string>Section - Introduction</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>3</key><dict>
         <key>Filename</key><string>/Users/tom/Documents/Games/Interactive Fiction/Head of State/Head of State.inform/Source/story.ni</string>
-        <key>Line</key><integer>118</integer>
+        <key>Line</key><integer>120</integer>
         <key>Title</key><string>Section - The Signing</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>4</key><dict>
         <key>Filename</key><string>/Users/tom/Documents/Games/Interactive Fiction/Head of State/Head of State.inform/Source/story.ni</string>
-        <key>Line</key><integer>137</integer>
-        <key>Title</key><string>Section - The Bribery Scandle</string>
+        <key>Line</key><integer>139</integer>
+        <key>Title</key><string>Section - The Bribery Scandal</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
