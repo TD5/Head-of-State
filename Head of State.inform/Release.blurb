@@ -13,10 +13,8 @@ release to "/Users/tom/Documents/Games/Interactive Fiction/Head of State/Head of
 storyfile leafname "Head of State.gblorb"
 storyfile "/Users/tom/Documents/Games/Interactive Fiction/Head of State/Head of State.inform/Build/output.ulx" include
 ifiction "/Users/tom/Documents/Games/Interactive Fiction/Head of State/Head of State.inform/Metadata.iFiction" include
-cover "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
-picture 1 "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
-release file "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
-release file "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Small Cover.jpg"
+cover "/Users/tom/Documents/Games/Interactive Fiction/Head of State/Head of State.materials/Cover.jpg"
+picture 1 "/Users/tom/Documents/Games/Interactive Fiction/Head of State/Head of State.materials/Cover.jpg"
 
 ! Placeholder variables
 
@@ -48,7 +46,7 @@ template path "/Applications/Inform.app/Contents/Resources/Internal/Templates"
 css
 website "Standard"
 status instruction ||&nbsp;<a href="source:story.ni#line5"><img border=0 src=inform:/doc_images/Reveal.tif></a>||
-status alternative ||Using 'Release along with cover art', to provide something more distinctive than the default artwork above&nbsp;<a href=inform:/doc403.html><img border=0 src=inform:/doc_images/help.png></a>||
+status instruction ||&nbsp;<a href="source:story.ni#line6"><img border=0 src=inform:/doc_images/Reveal.tif></a>||
 status alternative ||Using 'Release along with a file of "Such-and-Such" called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc401.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc411.html><img border=0 src=inform:/doc_images/help.png></a>||

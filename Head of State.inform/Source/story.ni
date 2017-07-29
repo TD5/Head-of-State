@@ -3,6 +3,7 @@
 Include Hybrid Choices by AW Freyr
 
 Release along with an interpreter.
+Release along with cover art.
 
 When play begins, say "------
 
@@ -65,3 +66,7 @@ The chair of the head of state is scenery in the official office. Description is
 The bill is carried by Martin Gravell. Description is "It's an offical document. A bill that needs your approval if it is to survive. Something about funding for healthcare for the poorest and most needy citizens of this great country: Not something you are known for supporting."
 
 Martin Gravell is a man in the official office. "Your senior advisor, Martin Gravell, stands patiently in front of your desk." Description is "Gravell is your right-hand man. He's loyal and he knows how to keep his mouth shut."
+
+[Instead of asking Gravell:
+	switch to cyoa at Introduction]
+	
