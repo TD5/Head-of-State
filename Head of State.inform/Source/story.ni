@@ -22,6 +22,8 @@ You're going to have to work hard if you want to stay in power: It's already beg
 Instead of examining the player: 
     say "A droopy face, too much makeup, a bit on the heavy side. Not that you are willing to acknowledge any of the negatives. You're important. You've always been important. If someone disagrees with you they must be wrong - and your expression makes that clear."
 
+Release along with an interpreter.
+
 Section - The Official Office
 
 The Official Office is a room. "Your office probably doesn't look much different now to how it did when each of your predecessors occupied it over the last century.
