@@ -34,17 +34,26 @@ The maximum political power is a number that varies. The maximum political power
 The minimum political power is a number that varies. The minimum political power is 5.
 The current political power is a number that varies. The current political power is 5.
 
-A game state is a kind of value. The game states are WaitingForIntroduction, WaitingForBillSigning and HandleQuipScandle. It is usually WaitingForIntroduction.
-
-A bool is a kind of value. The bools are yes and no. It is usually.
+A game state is a kind of value. The game states are WaitingForIntroduction, WaitingForBillSigning and HandlingBriberyScandle. It is usually WaitingForIntroduction.
 
 The current_game_state is a game state that varies. The current_game_state is initially WaitingForIntroduction.
 
 After looking for the first time:
-     now the left hand status line is "Political power: [current political power]/[maximum political power] stars";
+     now the left hand status line is "Political power: [current political power]/[maximum political power] stars".
 
 Every turn:
-     now the left hand status line is "Political power: [current political power]/[maximum political power] stars";
+     now the left hand status line is "Political power: [current political power]/[maximum political power] stars".
+
+Talking to is an action applying to one visible thing.
+Understand "talk to [someone]" as talking to.
+Understand "speak to [someone]" as talking to.
+Report talking to: say "You have nothing to say.".
+
+Signing is an action applying to one visible thing.
+Understand "sign [something]" as signing.
+Report signing: say "That would just be graffiti.".
+
+Signedness is a kind of value. The signednesses are signed and unsigned.
 
 Section - The Official Office
 
@@ -53,6 +62,8 @@ The Official Office is a room. "Your office probably doesn't look much different
 Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
 
 The things some men have done to make it to this room..."
+
+[TODO Add short room description]
 
 Instead of smelling the official office, say "The scent of tobacco smoke and brandy lingers in the room."
 
@@ -70,17 +81,12 @@ The portraits are scenery in the official office. Description is "These are the 
 
 The chair of the head of state is scenery in the official office. Description is "Your chair of the Head of State isn't too far from looking like a throne. When you picked your furniture it was important that your choice sent a message, and your message was a clear one of power, wealth and ruthlessness."
 
-The healthcare bill is carried by Martin Gavell. Description is "It's an offical document. A bill that needs your approval if it is to survive. Something about funding for healthcare for the poorest and most needy citizens of this great country: Not something you are known for supporting."
+The healthcare bill is carried by Martin Gavell. Description is "It's an offical document. A bill that needs your approval if it is to survive. Something about funding for healthcare for the poorest and most needy citizens of this great country: Not something you are known for supporting.". The bill has a signedness called the state. The signedness of the bill is initially unsigned.
 
 Martin Gavell is a man in the official office. "Your senior advisor, Martin Gavell, stands patiently in front of your desk.[if current_game_state is WaitingForIntroduction] It looks like he's waiting for you to speak to him.[end if]". Description is "Gavell is your right-hand man. He's loyal and he knows how to keep his mouth shut."
 Understand "advisor" as Martin Gavell.
 
 Section - Introduction
-
-Talking to is an action applying to one visible thing.
-Understand "talk to [someone]" as talking to.
-Understand "speak to [someone]" as talking to.
-Report talking to: say "You have nothing to say.".
 
 [TODO Add a hint to talk to Gavell after 5 turns of being in this state (have a "time spent in this state" counter)]
 
@@ -113,5 +119,23 @@ A page-toggle rule for P-IntroductionGiven:
 	
 Section - The Signing
 
-P-NudgeForBillSigning is a page. It is a one-off.
-"Gavell: 'Sir, will you be signing the healthcare bill?'"
+Instead of signing the bill:
+	If current_game_state is not WaitingForIntroduction:
+		[TODO Change game state]
+		If the signedness of the bill is unsigned:
+			say "You sign the bill into law.";
+			now the signedness of the bill is signed;
+		[TODO Newspaper headline - no change in power]
+		otherwise:
+			say "You rip up the bill and throw it away.";
+			remove the bill from play;
+			[TODO Newspaper headline - no change in power]
+	otherwise:
+		say "Why would I do that?".
+
+[TODO Nudge if they've not signed it for 5 turns: "Gavell: 'Sir, will you be signing the healthcare bill?'"]
+
+	
+Section - The Bribery Scandle
+
+[TODO]
