@@ -36,6 +36,8 @@ The current political power is a number that varies. The current political power
 
 A game state is a kind of value. The game states are WaitingForIntroduction, WaitingForBillSigning and HandleQuipScandle. It is usually WaitingForIntroduction.
 
+A bool is a kind of value. The bools are yes and no. It is usually.
+
 The current_game_state is a game state that varies. The current_game_state is initially WaitingForIntroduction.
 
 After looking for the first time:
@@ -68,21 +70,28 @@ The portraits are scenery in the official office. Description is "These are the 
 
 The chair of the head of state is scenery in the official office. Description is "Your chair of the Head of State isn't too far from looking like a throne. When you picked your furniture it was important that your choice sent a message, and your message was a clear one of power, wealth and ruthlessness."
 
-The healthcare bill is carried by Martin Gravell. Description is "It's an offical document. A bill that needs your approval if it is to survive. Something about funding for healthcare for the poorest and most needy citizens of this great country: Not something you are known for supporting."
+The healthcare bill is carried by Martin Gavell. Description is "It's an offical document. A bill that needs your approval if it is to survive. Something about funding for healthcare for the poorest and most needy citizens of this great country: Not something you are known for supporting."
 
-Martin Gravell is a man in the official office. "Your senior advisor, Martin Gravell, stands patiently in front of your desk." Description is "Gravell is your right-hand man. He's loyal and he knows how to keep his mouth shut."
-Understand "advisor" as Martin Gravell.
+Martin Gavell is a man in the official office. "Your senior advisor, Martin Gavell, stands patiently in front of your desk." Description is "Gavell is your right-hand man. He's loyal and he knows how to keep his mouth shut."
+Understand "advisor" as Martin Gavell.
 
 Section - Introduction
 
-After examining Gravell:
+Talking to is an action applying to one visible thing.
+Understand "talk to [someone]" as talking to.
+Understand "speak to [someone]" as talking to.
+Report talking to: say "You have nothing to say.".
+
+[TODO Add a hint to talk to Gavell after 5 turns]
+
+Instead of talking to Gavell:
 	If current_game_state is WaitingForIntroduction:
 		switch to cyoa at P-Introduction
 	
 P-Introduction is a page. It is a one-off.
-"You nod to Gravell.
+"You nod to Gavell.
 
-Gravell: 'Sir, the healthcare bill requires your attention.'"
+Gavell: 'Sir, the healthcare bill requires your attention.'"
 
 P-Grunt is a page. It is for P-Introduction.
 "You grunt to indicate that he can continue."
@@ -90,17 +99,19 @@ It flips to P-IntroductionGiven.
 The cdesc is "Just grunt.".
 
 P-LeaveBillOnDesk is a page. It is for P-Introduction.
-"You: 'Hand it over, Gravell.'"
+"You: 'Hand it over, Gavell.'"
 It flips to P-IntroductionGiven.
 The cdesc is "Ask for the bill.".
 
 P-IntroductionGiven is a page. It is flipped to by P-Grunt and P-LeaveBillOnDesk. It is an end-page.
-"Gravell: 'Here you are, Sir.'
+"Gavell: 'Here you are, Sir.'
 
-Gravell gives the bill to you.".
+Gavell gives the bill to you.".
 A page-toggle rule for P-IntroductionGiven:
 	now the current_game_state is WaitingForBillSigning;
 	now the player carries the healthcare bill.
+	
+Section - The Signing
 
 P-NudgeForBillSigning is a page. It is a one-off.
-"Gravell: 'Sir, will you be signing the healthcare bill?'"
+"Gavell: 'Sir, will you be signing the healthcare bill?'"

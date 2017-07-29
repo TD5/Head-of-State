@@ -30,7 +30,7 @@ You're going to have to work hard if you want to stay in power: It's already beg
 
 Head of State
 An Interactive Fiction by Tom Davies
-Release 1 / Serial number 170729 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) 
+Release 1 / Serial number 170729 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Official Office
 Your office probably doesn't look much different now to how it did when each of your predecessors occupied it over the last century.
@@ -39,12 +39,13 @@ Portraits of stern old white men hang on the walls, a huge candelier hangs down 
 
 The things some men have done to make it to this room...
 
-Your senior advisor, Martin Gravell, stands patiently in front of your desk.
+Your senior advisor, Martin Gavell, stands patiently in front of your desk.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1184"></child>
             <child nodeId="node-1183"></child>
+            <child nodeId="node-1427"></child>
             <child nodeId="node-1188"></child>
             <child nodeId="node-1220"></child>
             <child nodeId="node-1425"></child>
@@ -806,6 +807,61 @@ The things some men have done to make it to this room...
 On the desk is Now the bill.
 
 Your senior advisor, Martin Gravell, stands patiently in front of your desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1427">
+        <command xml:space="preserve">examine Gavell</command>
+        <result xml:space="preserve">Gavell is your right-hand man. He's loyal and he knows how to keep his mouth shut.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1428"></child>
+        </children>
+    </item>
+    <item nodeId="node-1428">
+        <command xml:space="preserve">talk to Gavell</command>
+        <result xml:space="preserve">You nod to Gavell.
+
+Gavell: "Sir, the healthcare bill requires your attention."
+
+1) Just grunt.
+2) Ask for the bill.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1429"></child>
+        </children>
+    </item>
+    <item nodeId="node-1429">
+        <command xml:space="preserve">1</command>
+        <result xml:space="preserve">[Just grunt.]
+
+You grunt to indicate that he can continue.
+
+Gavell: "Here you are, Sir."
+
+Gavell gives the bill to you.
+
+Official Office
+Your office probably doesn't look much different now to how it did when each of your predecessors occupied it over the last century.
+
+Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
+
+The things some men have done to make it to this room...
+
+Your senior advisor, Martin Gavell, stands patiently in front of your desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1430"></child>
+        </children>
+    </item>
+    <item nodeId="node-1430">
+        <command xml:space="preserve">inventory</command>
+        <result xml:space="preserve">You are carrying:
+  a healthcare bill
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
