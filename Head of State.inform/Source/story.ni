@@ -72,7 +72,7 @@ The chair of the head of state is scenery in the official office. Description is
 
 The healthcare bill is carried by Martin Gavell. Description is "It's an offical document. A bill that needs your approval if it is to survive. Something about funding for healthcare for the poorest and most needy citizens of this great country: Not something you are known for supporting."
 
-Martin Gavell is a man in the official office. "Your senior advisor, Martin Gavell, stands patiently in front of your desk." Description is "Gavell is your right-hand man. He's loyal and he knows how to keep his mouth shut."
+Martin Gavell is a man in the official office. "Your senior advisor, Martin Gavell, stands patiently in front of your desk.[if current_game_state is WaitingForIntroduction] It looks like he's waiting for you to speak to him.[end if]". Description is "Gavell is your right-hand man. He's loyal and he knows how to keep his mouth shut."
 Understand "advisor" as Martin Gavell.
 
 Section - Introduction
@@ -82,7 +82,7 @@ Understand "talk to [someone]" as talking to.
 Understand "speak to [someone]" as talking to.
 Report talking to: say "You have nothing to say.".
 
-[TODO Add a hint to talk to Gavell after 5 turns]
+[TODO Add a hint to talk to Gavell after 5 turns of being in this state (have a "time spent in this state" counter)]
 
 Instead of talking to Gavell:
 	If current_game_state is WaitingForIntroduction:
