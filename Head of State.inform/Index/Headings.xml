@@ -11,7 +11,7 @@
     </dict>
     <key>1</key><dict>
         <key>Filename</key><string>/Users/tom/Documents/Games/Interactive Fiction/Head of State/Head of State.inform/Source/story.ni</string>
-        <key>Line</key><integer>27</integer>
+        <key>Line</key><integer>29</integer>
         <key>Title</key><string>Section - The Official Office</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
@@ -923,6 +923,216 @@
         <key>Line</key><integer>258</integer>
         <key>Title</key><string>Section 3 - Further pronouns</string>
         <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>132</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>1</integer>
+        <key>Title</key><string>Version 7 of Hybrid Choices by AW Freyr begins here</string>
+        <key>Level</key><integer>0</integer>
+        <key>Indentation</key><integer>0</integer>
+    </dict>
+    <key>133</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>5</integer>
+        <key>Title</key><string>Part - CYOA Mode</string>
+        <key>Level</key><integer>3</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>134</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>82</integer>
+        <key>Title</key><string>Part - Pages and Choices</string>
+        <key>Level</key><integer>3</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>135</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>102</integer>
+        <key>Title</key><string>Part - Showing Choices</string>
+        <key>Level</key><integer>3</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>136</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>196</integer>
+        <key>Title</key><string>section - Suppressing Choices Depending on Conditions</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>137</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>200</integer>
+        <key>Title</key><string>section - Toggling Conditions After Selecting a Choice</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>138</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>205</integer>
+        <key>Title</key><string>section - Displaying Complex Output</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>139</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>209</integer>
+        <key>Title</key><string>Chapter - Understanding Choices</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>140</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>237</integer>
+        <key>Title</key><string>Chapter - Selecting Activity</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>141</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>258</integer>
+        <key>Title</key><string>section a - selecting a page</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>3</integer>
+    </dict>
+    <key>142</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>265</integer>
+        <key>Title</key><string>section b - selecting not a page</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>3</integer>
+    </dict>
+    <key>143</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>277</integer>
+        <key>Title</key><string>Chapter - Refresh Pages</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>144</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>290</integer>
+        <key>Title</key><string>Chapter - Page Options</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>145</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>292</integer>
+        <key>Title</key><string>section a - One-Off Pages</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>3</integer>
+    </dict>
+    <key>146</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>300</integer>
+        <key>Title</key><string>section b - Dead Ends</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>3</integer>
+    </dict>
+    <key>147</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>304</integer>
+        <key>Title</key><string>section c - Item-Dependent</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>3</integer>
+    </dict>
+    <key>148</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>322</integer>
+        <key>Title</key><string>section d - Page-Dependent</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>3</integer>
+    </dict>
+    <key>149</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>377</integer>
+        <key>Title</key><string>section e - Activating/Deactivating</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>3</integer>
+    </dict>
+    <key>150</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>419</integer>
+        <key>Title</key><string>Chapter - Item Invoking</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>151</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>432</integer>
+        <key>Title</key><string>Chapter - CYOA Teleport</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>152</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>437</integer>
+        <key>Title</key><string>Part - Cyoa Debug Mode</string>
+        <key>Level</key><integer>3</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>153</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>446</integer>
+        <key>Title</key><string>section a - Toggling Debug Mode (not for release)</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>154</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>460</integer>
+        <key>Title</key><string>Part - Parser</string>
+        <key>Level</key><integer>3</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>155</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>476</integer>
+        <key>Title</key><string>Chapter - Accept Testing Commands (not for release)</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>156</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>485</integer>
+        <key>Title</key><string>Chapter - Accept System Commands</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>157</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>490</integer>
+        <key>Title</key><string>Chapter - Accept Examining Commands</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>158</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>497</integer>
+        <key>Title</key><string>Chapter - Accept Item Commands</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>159</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>502</integer>
+        <key>Title</key><string>Part - Time</string>
+        <key>Level</key><integer>3</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>160</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>510</integer>
+        <key>Title</key><string>Part - Choice Window (for use with Flexible Windows by Jon Ingold)</string>
+        <key>Level</key><integer>3</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>161</key><dict>
+        <key>Filename</key><string>/Users/tom/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>531</integer>
+        <key>Title</key><string>Part - Windowless CYOA (for use without Flexible Windows by Jon Ingold)</string>
+        <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
 </dict></plist>

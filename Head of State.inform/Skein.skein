@@ -39,9 +39,12 @@ The things some men have done to make it to this room...
 
 On the desk is a letter.
 
+Your senior advisor, Martin Gravell, stands in front of your desk.
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1168"></child>
+            <child nodeId="node-1178"></child>
             <child nodeId="node-1176"></child>
             <child nodeId="node-1172"></child>
             <child nodeId="node-1171"></child>
@@ -99,6 +102,13 @@ On the desk is a letter.
     <item nodeId="node-1177">
         <command xml:space="preserve">look at myself</command>
         <result xml:space="preserve">A droopy face, too much makeup, a bit on the heavy side. Not that you are willing to acknowledge any of the negatives. You're important. You've always been important. If someone disagrees with you they must be wrong - and your expression shows it.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1178">
+        <command xml:space="preserve">examine martin gravell</command>
+        <result xml:space="preserve">Gravell is your right-hand man. He's loyal and he knows how to keep his mouth shut.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
