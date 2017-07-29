@@ -761,7 +761,7 @@ Constant life = NULL;
 ! Definitions.i6t: Action Count
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant ActionCount = 81;
+Constant ActionCount = 80;
 
 
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
@@ -4405,7 +4405,7 @@ Global lightflag = false;
 ! ListWriter.i6t: Memory
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant REQUISITION_STACK_SIZE = 3*27;
+Constant REQUISITION_STACK_SIZE = 3*29;
 Array requisition_stack --> REQUISITION_STACK_SIZE;
 Global requisition_stack_pointer = 0;
 
@@ -9998,7 +9998,7 @@ Array valued_property_offsets --> valued_property_offsets_SIZE;
 ! Output.i6t: Activities
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant NUMBER_RULEBOOKS_CREATED = 389;
+Constant NUMBER_RULEBOOKS_CREATED = 386;
 Constant V0_printing_the_name = 0;
 Constant V1_printing_the_plural_name = 1;
 Constant V2_printing_a_number = 2;
@@ -10640,7 +10640,7 @@ Constant IK2_First = selfobj;
 Constant IK3_First = I51_north;
 Constant IK4_First = nothing;
 Constant IK5_First = nothing;
-Constant IK6_First = nothing;
+Constant IK6_First = I133_desk;
 Constant IK7_First = nothing;
 Constant IK8_First = selfobj;
 Constant IK9_First = nothing;
@@ -11201,7 +11201,7 @@ Object -> I132_window ""
 ;
 
 Object -> I133_desk ""
-    class K2_thing
+    class K6_supporter
     with short_name BC_171
     with description BC_172
     has static
@@ -11209,9 +11209,11 @@ Object -> I133_desk ""
     with vector 0
     has mark_as_thing
     with IK2_Count 2
-    with IK2_Link I134_lawn
-    with KD_Count 2
-    with name 'desk' 'things//p' 
+    with IK2_Link I145_now_the_bill
+    with IK6_Count 0
+    with IK6_Link nothing
+    with KD_Count 6
+    with name 'desk' 'supporters//p' 
     with action_bitmap 0 0 0 0 0 0 
     with initial BC_173
     with list_together BC_174
@@ -11219,10 +11221,29 @@ Object -> I133_desk ""
     with article BC_176
 ;
 
-Object -> I134_lawn ""
+Object -> -> I145_now_the_bill ""
     class K2_thing
     with short_name BC_177
-    with description BC_178
+    has proper
+    with vector 0
+    with cap_short_name BC_178
+    has mark_as_thing
+    with IK2_Count 10
+    with IK2_Link I134_lawn
+    with KD_Count 2
+    with name 'now' 'the' 'bill' 'things//p' 
+    with action_bitmap 0 0 0 0 0 0 
+    with description BC_179
+    with initial BC_180
+    with list_together BC_181
+    with plural BC_182
+    with article BC_183
+;
+
+Object -> I134_lawn ""
+    class K2_thing
+    with short_name BC_184
+    with description BC_185
     has static
     has scenery
     with vector 0
@@ -11232,16 +11253,16 @@ Object -> I134_lawn ""
     with KD_Count 2
     with name 'lawn' 'things//p' 
     with action_bitmap 0 0 0 0 0 0 
-    with initial BC_179
-    with list_together BC_180
-    with plural BC_181
-    with article BC_182
+    with initial BC_186
+    with list_together BC_187
+    with plural BC_188
+    with article BC_189
 ;
 
 Object -> I135_chandelier ""
     class K2_thing
-    with short_name BC_183
-    with description BC_184
+    with short_name BC_190
+    with description BC_191
     has static
     has scenery
     with vector 0
@@ -11251,16 +11272,16 @@ Object -> I135_chandelier ""
     with KD_Count 2
     with name 'chandelier' 'things//p' 
     with action_bitmap 0 0 0 0 0 0 
-    with initial BC_185
-    with list_together BC_186
-    with plural BC_187
-    with article BC_188
+    with initial BC_192
+    with list_together BC_193
+    with plural BC_194
+    with article BC_195
 ;
 
 Object -> I136_ceiling ""
     class K2_thing
-    with short_name BC_189
-    with description BC_190
+    with short_name BC_196
+    with description BC_197
     has static
     has scenery
     with vector 0
@@ -11270,16 +11291,16 @@ Object -> I136_ceiling ""
     with KD_Count 2
     with name 'ceiling' 'things//p' 
     with action_bitmap 0 0 0 0 0 0 
-    with initial BC_191
-    with list_together BC_192
-    with plural BC_193
-    with article BC_194
+    with initial BC_198
+    with list_together BC_199
+    with plural BC_200
+    with article BC_201
 ;
 
 Object -> I137_portraits ""
     class K2_thing
-    with short_name BC_195
-    with description BC_196
+    with short_name BC_202
+    with description BC_203
     has static
     has scenery
     with vector 0
@@ -11290,16 +11311,16 @@ Object -> I137_portraits ""
     with name 'portraits' 'things//p' 'portrait' 'painting' 'paintings' 'pictures' 
     with parse_name Parse_Name_GV95
     with action_bitmap 0 0 0 0 0 0 
-    with initial BC_197
-    with list_together BC_198
-    with plural BC_199
-    with article BC_200
+    with initial BC_204
+    with list_together BC_205
+    with plural BC_206
+    with article BC_207
 ;
 
 Object -> I138_chair_of_the_head_of_st ""
     class K2_thing
-    with short_name BC_201
-    with description BC_202
+    with short_name BC_208
+    with description BC_209
     has static
     has scenery
     with vector 0
@@ -11309,17 +11330,17 @@ Object -> I138_chair_of_the_head_of_st ""
     with KD_Count 2
     with name 'chair' 'of' 'the' 'head' 'of' 'state' 'things//p' 
     with action_bitmap 0 0 0 0 0 0 
-    with initial BC_203
-    with list_together BC_204
-    with plural BC_205
-    with article BC_206
+    with initial BC_210
+    with list_together BC_211
+    with plural BC_212
+    with article BC_213
 ;
 
 Object -> I140_martin_gravell ""
     class K10_man
-    with short_name BC_207
-    with description BC_208
-    with initial BC_209
+    with short_name BC_214
+    with description BC_215
+    with initial BC_216
     has proper
     with vector 0
     has mark_as_thing
@@ -11332,15 +11353,15 @@ Object -> I140_martin_gravell ""
     with KD_Count 10
     with name 'martin' 'gravell' 'men//p' 
     with action_bitmap 0 0 0 0 0 0 
-    with list_together BC_210
-    with plural BC_211
-    with article BC_212
+    with list_together BC_217
+    with plural BC_218
+    with article BC_219
 ;
 
 Object -> -> I139_bill ""
     class K2_thing
-    with short_name BC_213
-    with description BC_214
+    with short_name BC_220
+    with description BC_221
     has ~static
     with vector 0
     has mark_as_thing
@@ -11349,16 +11370,16 @@ Object -> -> I139_bill ""
     with KD_Count 2
     with name 'bill' 'things//p' 
     with action_bitmap 0 0 0 0 0 0 
-    with initial BC_215
-    with list_together BC_216
-    with plural BC_217
-    with article BC_218
+    with initial BC_222
+    with list_together BC_223
+    with plural BC_224
+    with article BC_225
 ;
 
 Object I141_p_introduction ""
     class K16_page
-    with short_name BC_219
-    with description BC_220
+    with short_name BC_226
+    with description BC_227
     has proper
     has p66_one_off
     with vector 0
@@ -11366,42 +11387,61 @@ Object I141_p_introduction ""
     with IK16_Link I142_p_grunt
     with KD_Count 16
     with action_bitmap 0 0 0 0 0 0 
-    with p16_cdesc BC_221
-    with list_together BC_222
-    with plural BC_223
-    with article BC_224
+    with p16_cdesc BC_228
+    with list_together BC_229
+    with plural BC_230
+    with article BC_231
 ;
 
 Object I142_p_grunt ""
     class K16_page
-    with short_name BC_225
-    with description BC_226
-    with p16_cdesc BC_227
+    with short_name BC_232
+    with description BC_233
+    with p16_cdesc BC_234
     has proper
+    with p64_destination_page I143_p_introductiongiven
     with vector 0
     with IK16_Count 2
-    with IK16_Link I143_p_goahead
+    with IK16_Link I143_p_introductiongiven
     with KD_Count 16
     with action_bitmap 0 0 0 0 0 0 
-    with list_together BC_228
-    with plural BC_229
-    with article BC_230
+    with list_together BC_235
+    with plural BC_236
+    with article BC_237
 ;
 
-Object I143_p_goahead ""
+Object I143_p_introductiongiven ""
     class K16_page
-    with short_name BC_231
-    with description BC_232
-    with p16_cdesc BC_233
+    with short_name BC_238
+    with description BC_239
     has proper
+    has p65_end_page
     with vector 0
     with IK16_Count 3
+    with IK16_Link I144_p_leavebillondesk
+    with KD_Count 16
+    with action_bitmap 0 0 0 0 0 0 
+    with p16_cdesc BC_240
+    with list_together BC_241
+    with plural BC_242
+    with article BC_243
+;
+
+Object I144_p_leavebillondesk ""
+    class K16_page
+    with short_name BC_244
+    with description BC_245
+    with p16_cdesc BC_246
+    has proper
+    with p64_destination_page I143_p_introductiongiven
+    with vector 0
+    with IK16_Count 4
     with IK16_Link nothing
     with KD_Count 16
     with action_bitmap 0 0 0 0 0 0 
-    with list_together BC_234
-    with plural BC_235
-    with article BC_236
+    with list_together BC_247
+    with plural BC_248
+    with article BC_249
 ;
 
 Constant I71_english_language = 1;
@@ -11458,12 +11498,12 @@ Constant I129_waitingforbillsigning = 2;
 Constant I130_handlequipscandle = 3;
 Array Global_Vars -->
   (false) ! 7 darkness witnessed
-  (BC_237) ! 25 command prompt
+  (BC_250) ! 25 command prompt
   (I71_english_language) ! 29 language of play
-  (BC_238) ! 32 story author
-  (BC_239) ! 33 story headline
-  (BC_240) ! 34 story genre
-  (BC_241) ! 35 story description
+  (BC_251) ! 32 story author
+  (BC_252) ! 33 story headline
+  (BC_253) ! 34 story genre
+  (BC_254) ! 35 story description
   (1) ! 36 release number
   (0) ! 37 story creation year
   (0) ! 45 locale paragraph count
@@ -11474,37 +11514,37 @@ Array Global_Vars -->
   (379) ! 64 object-choice-handler
   (1) ! 65 item-invoking disabled
   (false) ! 66 cyoa debug boolean
-  (BC_242) ! 67 cyoa error message
+  (BC_255) ! 67 cyoa error message
   (5) ! 68 maximum political power
   (5) ! 69 minimum political power
   (5) ! 70 current political power
 ;
 Array V2V_Bitmap_71 --> IK16_Count IK16_Count 
-  4 ! Number of left instances
-  4 ! Number of right instances
+  5 ! Number of left instances
+  5 ! Number of right instances
     PrintShortName ! To print left instances
   PrintShortName ! To print right instances
   true ! Cache broken flag
   V2V_Route_Cache_71 ! Cache array (if any)
-$00c0 ;
+$0280 $0000 ;
 Constant V2V_Route_Cache_71 = 0;
 Array V2V_Bitmap_79 --> IK16_Count IK16_Count 
-  4 ! Number of left instances
-  4 ! Number of right instances
+  5 ! Number of left instances
+  5 ! Number of right instances
     PrintShortName ! To print left instances
   PrintShortName ! To print right instances
   true ! Cache broken flag
   V2V_Route_Cache_79 ! Cache array (if any)
-$0000 ;
+$0000 $0000 ;
 Constant V2V_Route_Cache_79 = 0;
 Array V2V_Bitmap_81 --> IK16_Count IK16_Count 
-  4 ! Number of left instances
-  4 ! Number of right instances
+  5 ! Number of left instances
+  5 ! Number of right instances
     PrintShortName ! To print left instances
   PrintShortName ! To print right instances
   true ! Cache broken flag
   V2V_Route_Cache_81 ! Cache array (if any)
-$0000 ;
+$0000 $0000 ;
 Constant V2V_Route_Cache_81 = 0;
 
 
@@ -11516,14 +11556,14 @@ Constant V2V_Route_Cache_81 = 0;
 
 
 Array T0_final_question_options table  tab_0_0 tab_0_1 tab_0_2 tab_0_3 tab_0_4;
-Array tab_0_0 table $0664 0 (BC_243) (BC_244) (BC_245) (BC_246) (BC_247) ;
+Array tab_0_0 table $0664 0 (BC_256) (BC_257) (BC_258) (BC_259) (BC_260) ;
 Array tab_0_1 table $0465 1 (0) (0) (1) (0) (0) ;
 Array tab_0_2 table $2066 2 (Consult_Grammar_96) (Consult_Grammar_97) (Consult_Grammar_98) (Consult_Grammar_99) (Consult_Grammar_100) ;
 Array tab_0_3 table $0067 3 (IMMEDIATELY_RESTART_VM_R) (IMMEDIATELY_RESTORE_SAVED_R) ( TABLE_NOVALUE) (IMMEDIATELY_QUIT_R) (IMMEDIATELY_UNDO_R) ;
 Array tab_0_4 table $0068 4 ( TABLE_NOVALUE) ( TABLE_NOVALUE) (V27_amusing_a_victorious_pla) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ;
 Array T1_locale_priorities table  tab_1_0 tab_1_1;
-Array tab_1_0 table $0869 NULL ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
-Array tab_1_1 table $446a 5 ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
+Array tab_1_0 table $0869 NULL ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
+Array tab_1_1 table $446a 5 ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
 Array T2_currently_available_choic table  tab_2_0 tab_2_1 tab_2_2;
 Array tab_2_0 table $446b 7 ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
 Array tab_2_1 table $086c NULL ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
@@ -11537,7 +11577,7 @@ Array TB_Blanks ->
   $1b  ! Column 4
   
   ! For table T1_locale_priorities
-  $ff $07  ! Column 1
+  $ff $0f  ! Column 1
   
   ! For table T2_currently_available_choic
   $ff $ff $ff $ff $01  ! Column 0
@@ -11662,9 +11702,8 @@ Array ActionData table
   ##A77_choosing  $$00001000  NUMBER_TY OBJECT_TY  0 20077
   ##A78_item_invoking  $$00001000  OBJECT_TY OBJECT_TY  0 20078
   ##A79_toggling_cyoa_debug_mode  $$00100000  OBJECT_TY OBJECT_TY  0 20079
-  ##A80_talking  $$00001000  OBJECT_TY OBJECT_TY  0 20080
 ;
-Constant AD_RECORDS = 81;
+Constant AD_RECORDS = 80;
 [ ANSTVC_7 
     pos ! Implied call parameter
     state ! Implied call parameter
@@ -11810,7 +11849,6 @@ Constant AD_RECORDS = 81;
         ##A77_choosing: print "choosing"; if (for_say ~= 2) { print " "; DA_Number(parsed_number); }
         ##A78_item_invoking: print "item-invoking"; if (for_say ~= 2) { print " "; DA_Name(n); }
         ##A79_toggling_cyoa_debug_mode: print "toggling cyoa debug mode"; 
-        ##A80_talking: print "talking"; if (for_say ~= 2) { print " "; DA_Name(n); }
     }
 ];
 
@@ -11824,8 +11862,7 @@ Array ActionCoding -->
     ##Listen ##Taste ##Cut ##Jump ##Tie ##Drink ##Sorry ##Swing
     ##Rub ##SetTo ##WaveHands ##Buy ##Climb ##Sleep ##Quit ##Save
     ##Restore ##Restart ##Verify ##ScriptOn ##ScriptOff ##Version ##Score ##LMode3
-    ##LMode2 ##LMode1 ##NotifyOn ##NotifyOff ##Pronouns ##A77_choosing ##A78_item_invoking ##A79_toggling_cyoa_debug_mode
-    ##A80_talking;
+    ##LMode2 ##LMode1 ##NotifyOn ##NotifyOff ##Pronouns ##A77_choosing ##A78_item_invoking ##A79_toggling_cyoa_debug_mode;
 
 
 Array ActionHappened --> 0 0 0 0 0 0;
@@ -12070,9 +12107,6 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ];
 [ A79_toggling_cyoa_debug_modeSub ;
     return GenericVerbSub(383,384,385);
-];
-[ A80_talkingSub ;
-    return GenericVerbSub(386,387,388);
 ];
 
 [ MistakeActionSub ;
@@ -22325,7 +22359,7 @@ Array TimedEventTimesTable table 0 0;
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
 
-Array rulebooks_array --> B0_startup B1_turn_sequence B2_shutdown B3_scene_changing B4_when_play_begins B5_when_play_ends B6_when_scene_begins B7_when_scene_ends B8_every_turn B9_action_processing B10_setting_action_variables B11_specific_action_processi B12_player_s_action_awarenes B13_accessibility B14_reaching_inside B15_reaching_outside B16_visibility B17_persuasion B18_unsuccessful_attempt_by B19_before B20_instead B21_check B22_carry_out B23_after B24_report B25_does_the_player_mean B26_multiple_action_processi B27_when_entire_game_begins B28_when_entire_game_ends B29_before_printing_the_name B30_for_printing_the_name B31_after_printing_the_name B32_before_printing_the_plur B33_for_printing_the_plural_ B34_after_printing_the_plura B35_before_printing_a_number B36_for_printing_a_number B37_after_printing_a_number B38_before_printing_room_des B39_for_printing_room_descri B40_after_printing_room_desc B41_before_printing_inventor B42_for_printing_inventory_d B43_after_printing_inventory B44_before_listing_contents B45_for_listing_contents B46_after_listing_contents B47_before_grouping_together B48_for_grouping_together B49_after_grouping_together B50_before_writing_a_paragra B51_for_writing_a_paragraph_ B52_after_writing_a_paragrap B53_before_listing_nondescri B54_for_listing_nondescript_ B55_after_listing_nondescrip B56_before_printing_the_name B57_for_printing_the_name_of B58_after_printing_the_name_ B59_before_printing_the_desc B60_for_printing_the_descrip B61_after_printing_the_descr B62_before_printing_the_anno B63_for_printing_the_announc B64_after_printing_the_annou B65_before_printing_the_anno B66_for_printing_the_announc B67_after_printing_the_annou B68_before_printing_a_refusa B69_for_printing_a_refusal_t B70_after_printing_a_refusal B71_before_constructing_the_ B72_for_constructing_the_sta B73_after_constructing_the_s B74_before_printing_the_bann B75_for_printing_the_banner_ B76_after_printing_the_banne B77_before_reading_a_command B78_for_reading_a_command B79_after_reading_a_command B80_before_deciding_the_scop B81_for_deciding_the_scope B82_after_deciding_the_scope B83_before_deciding_the_conc B84_for_deciding_the_conceal B85_after_deciding_the_conce B86_before_deciding_whether_ B87_for_deciding_whether_all B88_after_deciding_whether_a B89_before_clarifying_the_pa B90_for_clarifying_the_parse B91_after_clarifying_the_par B92_before_asking_which_do_y B93_for_asking_which_do_you_ B94_after_asking_which_do_yo B95_before_printing_a_parser B96_for_printing_a_parser_er B97_after_printing_a_parser_ B98_before_supplying_a_missi B99_for_supplying_a_missing_ B100_after_supplying_a_missi B101_before_supplying_a_miss B102_for_supplying_a_missing B103_after_supplying_a_missi B104_before_implicitly_takin B105_for_implicitly_taking B106_after_implicitly_taking B107_before_starting_the_vir B108_for_starting_the_virtua B109_after_starting_the_virt B110_before_amusing_a_victor B111_for_amusing_a_victoriou B112_after_amusing_a_victori B113_before_printing_the_pla B114_for_printing_the_player B115_after_printing_the_play B116_before_handling_the_fin B117_for_handling_the_final_ B118_after_handling_the_fina B119_before_printing_the_loc B120_for_printing_the_locale B121_after_printing_the_loca B122_before_choosing_notable B123_for_choosing_notable_lo B124_after_choosing_notable_ B125_before_printing_a_local B126_for_printing_a_locale_p B127_after_printing_a_locale B128_before_issuing_the_resp B129_for_issuing_the_respons B130_after_issuing_the_respo B131_check_taking_inventory B132_carry_out_taking_invent B133_report_taking_inventory B134_check_taking B135_carry_out_taking B136_report_taking B137_check_removing_it_from B138_carry_out_removing_it_f B139_report_removing_it_from B140_check_dropping B141_carry_out_dropping B142_report_dropping B143_check_putting_it_on B144_carry_out_putting_it_on B145_report_putting_it_on B146_check_inserting_it_into B147_carry_out_inserting_it_ B148_report_inserting_it_int B149_check_eating B150_carry_out_eating B151_report_eating B152_check_going B153_carry_out_going B154_report_going B155_check_entering B156_carry_out_entering B157_report_entering B158_check_exiting B159_carry_out_exiting B160_report_exiting B161_check_getting_off B162_carry_out_getting_off B163_report_getting_off B164_check_looking B165_carry_out_looking B166_report_looking B167_check_examining B168_carry_out_examining B169_report_examining B170_check_looking_under B171_carry_out_looking_under B172_report_looking_under B173_check_searching B174_carry_out_searching B175_report_searching B176_check_consulting_it_abo B177_carry_out_consulting_it B178_report_consulting_it_ab B179_check_locking_it_with B180_carry_out_locking_it_wi B181_report_locking_it_with B182_check_unlocking_it_with B183_carry_out_unlocking_it_ B184_report_unlocking_it_wit B185_check_switching_on B186_carry_out_switching_on B187_report_switching_on B188_check_switching_off B189_carry_out_switching_off B190_report_switching_off B191_check_opening B192_carry_out_opening B193_report_opening B194_check_closing B195_carry_out_closing B196_report_closing B197_check_wearing B198_carry_out_wearing B199_report_wearing B200_check_taking_off B201_carry_out_taking_off B202_report_taking_off B203_check_giving_it_to B204_carry_out_giving_it_to B205_report_giving_it_to B206_check_showing_it_to B207_carry_out_showing_it_to B208_report_showing_it_to B209_check_waking B210_carry_out_waking B211_report_waking B212_check_throwing_it_at B213_carry_out_throwing_it_a B214_report_throwing_it_at B215_check_attacking B216_carry_out_attacking B217_report_attacking B218_check_kissing B219_carry_out_kissing B220_report_kissing B221_check_answering_it_that B222_carry_out_answering_it_ B223_report_answering_it_tha B224_check_telling_it_about B225_carry_out_telling_it_ab B226_report_telling_it_about B227_check_asking_it_about B228_carry_out_asking_it_abo B229_report_asking_it_about B230_check_asking_it_for B231_carry_out_asking_it_for B232_report_asking_it_for B233_check_waiting B234_carry_out_waiting B235_report_waiting B236_check_touching B237_carry_out_touching B238_report_touching B239_check_waving B240_carry_out_waving B241_report_waving B242_check_pulling B243_carry_out_pulling B244_report_pulling B245_check_pushing B246_carry_out_pushing B247_report_pushing B248_check_turning B249_carry_out_turning B250_report_turning B251_check_pushing_it_to B252_carry_out_pushing_it_to B253_report_pushing_it_to B254_check_squeezing B255_carry_out_squeezing B256_report_squeezing B257_check_saying_yes B258_carry_out_saying_yes B259_report_saying_yes B260_check_saying_no B261_carry_out_saying_no B262_report_saying_no B263_check_burning B264_carry_out_burning B265_report_burning B266_check_waking_up B267_carry_out_waking_up B268_report_waking_up B269_check_thinking B270_carry_out_thinking B271_report_thinking B272_check_smelling B273_carry_out_smelling B274_report_smelling B275_check_listening_to B276_carry_out_listening_to B277_report_listening_to B278_check_tasting B279_carry_out_tasting B280_report_tasting B281_check_cutting B282_carry_out_cutting B283_report_cutting B284_check_jumping B285_carry_out_jumping B286_report_jumping B287_check_tying_it_to B288_carry_out_tying_it_to B289_report_tying_it_to B290_check_drinking B291_carry_out_drinking B292_report_drinking B293_check_saying_sorry B294_carry_out_saying_sorry B295_report_saying_sorry B296_check_swinging B297_carry_out_swinging B298_report_swinging B299_check_rubbing B300_carry_out_rubbing B301_report_rubbing B302_check_setting_it_to B303_carry_out_setting_it_to B304_report_setting_it_to B305_check_waving_hands B306_carry_out_waving_hands B307_report_waving_hands B308_check_buying B309_carry_out_buying B310_report_buying B311_check_climbing B312_carry_out_climbing B313_report_climbing B314_check_sleeping B315_carry_out_sleeping B316_report_sleeping B317_check_quitting_the_game B318_carry_out_quitting_the_ B319_report_quitting_the_gam B320_check_saving_the_game B321_carry_out_saving_the_ga B322_report_saving_the_game B323_check_restoring_the_gam B324_carry_out_restoring_the B325_report_restoring_the_ga B326_check_restarting_the_ga B327_carry_out_restarting_th B328_report_restarting_the_g B329_check_verifying_the_sto B330_carry_out_verifying_the B331_report_verifying_the_st B332_check_switching_the_sto B333_carry_out_switching_the B334_report_switching_the_st B335_check_switching_the_sto B336_carry_out_switching_the B337_report_switching_the_st B338_check_requesting_the_st B339_carry_out_requesting_th B340_report_requesting_the_s B341_check_requesting_the_sc B342_carry_out_requesting_th B343_report_requesting_the_s B344_check_preferring_abbrev B345_carry_out_preferring_ab B346_report_preferring_abbre B347_check_preferring_unabbr B348_carry_out_preferring_un B349_report_preferring_unabb B350_check_preferring_someti B351_carry_out_preferring_so B352_report_preferring_somet B353_check_switching_score_n B354_carry_out_switching_sco B355_report_switching_score_ B356_check_switching_score_n B357_carry_out_switching_sco B358_report_switching_score_ B359_check_requesting_the_pr B360_carry_out_requesting_th B361_report_requesting_the_p B362_before_choice_displayin B363_for_choice_displaying B364_after_choice_displaying B365_choice_priority B366_before_displaying_avail B367_for_displaying_availabl B368_after_displaying_availa B369_choice_switch B370_page_switch B371_page_toggle B372_page_output B373_check_choosing B374_carry_out_choosing B375_report_choosing B376_before_selecting B377_for_selecting B378_after_selecting B379_general_choose_object B380_check_item_invoking B381_carry_out_item_invoking B382_report_item_invoking B383_check_toggling_cyoa_deb B384_carry_out_toggling_cyoa B385_report_toggling_cyoa_de B386_check_talking B387_carry_out_talking B388_report_talking 0;
+Array rulebooks_array --> B0_startup B1_turn_sequence B2_shutdown B3_scene_changing B4_when_play_begins B5_when_play_ends B6_when_scene_begins B7_when_scene_ends B8_every_turn B9_action_processing B10_setting_action_variables B11_specific_action_processi B12_player_s_action_awarenes B13_accessibility B14_reaching_inside B15_reaching_outside B16_visibility B17_persuasion B18_unsuccessful_attempt_by B19_before B20_instead B21_check B22_carry_out B23_after B24_report B25_does_the_player_mean B26_multiple_action_processi B27_when_entire_game_begins B28_when_entire_game_ends B29_before_printing_the_name B30_for_printing_the_name B31_after_printing_the_name B32_before_printing_the_plur B33_for_printing_the_plural_ B34_after_printing_the_plura B35_before_printing_a_number B36_for_printing_a_number B37_after_printing_a_number B38_before_printing_room_des B39_for_printing_room_descri B40_after_printing_room_desc B41_before_printing_inventor B42_for_printing_inventory_d B43_after_printing_inventory B44_before_listing_contents B45_for_listing_contents B46_after_listing_contents B47_before_grouping_together B48_for_grouping_together B49_after_grouping_together B50_before_writing_a_paragra B51_for_writing_a_paragraph_ B52_after_writing_a_paragrap B53_before_listing_nondescri B54_for_listing_nondescript_ B55_after_listing_nondescrip B56_before_printing_the_name B57_for_printing_the_name_of B58_after_printing_the_name_ B59_before_printing_the_desc B60_for_printing_the_descrip B61_after_printing_the_descr B62_before_printing_the_anno B63_for_printing_the_announc B64_after_printing_the_annou B65_before_printing_the_anno B66_for_printing_the_announc B67_after_printing_the_annou B68_before_printing_a_refusa B69_for_printing_a_refusal_t B70_after_printing_a_refusal B71_before_constructing_the_ B72_for_constructing_the_sta B73_after_constructing_the_s B74_before_printing_the_bann B75_for_printing_the_banner_ B76_after_printing_the_banne B77_before_reading_a_command B78_for_reading_a_command B79_after_reading_a_command B80_before_deciding_the_scop B81_for_deciding_the_scope B82_after_deciding_the_scope B83_before_deciding_the_conc B84_for_deciding_the_conceal B85_after_deciding_the_conce B86_before_deciding_whether_ B87_for_deciding_whether_all B88_after_deciding_whether_a B89_before_clarifying_the_pa B90_for_clarifying_the_parse B91_after_clarifying_the_par B92_before_asking_which_do_y B93_for_asking_which_do_you_ B94_after_asking_which_do_yo B95_before_printing_a_parser B96_for_printing_a_parser_er B97_after_printing_a_parser_ B98_before_supplying_a_missi B99_for_supplying_a_missing_ B100_after_supplying_a_missi B101_before_supplying_a_miss B102_for_supplying_a_missing B103_after_supplying_a_missi B104_before_implicitly_takin B105_for_implicitly_taking B106_after_implicitly_taking B107_before_starting_the_vir B108_for_starting_the_virtua B109_after_starting_the_virt B110_before_amusing_a_victor B111_for_amusing_a_victoriou B112_after_amusing_a_victori B113_before_printing_the_pla B114_for_printing_the_player B115_after_printing_the_play B116_before_handling_the_fin B117_for_handling_the_final_ B118_after_handling_the_fina B119_before_printing_the_loc B120_for_printing_the_locale B121_after_printing_the_loca B122_before_choosing_notable B123_for_choosing_notable_lo B124_after_choosing_notable_ B125_before_printing_a_local B126_for_printing_a_locale_p B127_after_printing_a_locale B128_before_issuing_the_resp B129_for_issuing_the_respons B130_after_issuing_the_respo B131_check_taking_inventory B132_carry_out_taking_invent B133_report_taking_inventory B134_check_taking B135_carry_out_taking B136_report_taking B137_check_removing_it_from B138_carry_out_removing_it_f B139_report_removing_it_from B140_check_dropping B141_carry_out_dropping B142_report_dropping B143_check_putting_it_on B144_carry_out_putting_it_on B145_report_putting_it_on B146_check_inserting_it_into B147_carry_out_inserting_it_ B148_report_inserting_it_int B149_check_eating B150_carry_out_eating B151_report_eating B152_check_going B153_carry_out_going B154_report_going B155_check_entering B156_carry_out_entering B157_report_entering B158_check_exiting B159_carry_out_exiting B160_report_exiting B161_check_getting_off B162_carry_out_getting_off B163_report_getting_off B164_check_looking B165_carry_out_looking B166_report_looking B167_check_examining B168_carry_out_examining B169_report_examining B170_check_looking_under B171_carry_out_looking_under B172_report_looking_under B173_check_searching B174_carry_out_searching B175_report_searching B176_check_consulting_it_abo B177_carry_out_consulting_it B178_report_consulting_it_ab B179_check_locking_it_with B180_carry_out_locking_it_wi B181_report_locking_it_with B182_check_unlocking_it_with B183_carry_out_unlocking_it_ B184_report_unlocking_it_wit B185_check_switching_on B186_carry_out_switching_on B187_report_switching_on B188_check_switching_off B189_carry_out_switching_off B190_report_switching_off B191_check_opening B192_carry_out_opening B193_report_opening B194_check_closing B195_carry_out_closing B196_report_closing B197_check_wearing B198_carry_out_wearing B199_report_wearing B200_check_taking_off B201_carry_out_taking_off B202_report_taking_off B203_check_giving_it_to B204_carry_out_giving_it_to B205_report_giving_it_to B206_check_showing_it_to B207_carry_out_showing_it_to B208_report_showing_it_to B209_check_waking B210_carry_out_waking B211_report_waking B212_check_throwing_it_at B213_carry_out_throwing_it_a B214_report_throwing_it_at B215_check_attacking B216_carry_out_attacking B217_report_attacking B218_check_kissing B219_carry_out_kissing B220_report_kissing B221_check_answering_it_that B222_carry_out_answering_it_ B223_report_answering_it_tha B224_check_telling_it_about B225_carry_out_telling_it_ab B226_report_telling_it_about B227_check_asking_it_about B228_carry_out_asking_it_abo B229_report_asking_it_about B230_check_asking_it_for B231_carry_out_asking_it_for B232_report_asking_it_for B233_check_waiting B234_carry_out_waiting B235_report_waiting B236_check_touching B237_carry_out_touching B238_report_touching B239_check_waving B240_carry_out_waving B241_report_waving B242_check_pulling B243_carry_out_pulling B244_report_pulling B245_check_pushing B246_carry_out_pushing B247_report_pushing B248_check_turning B249_carry_out_turning B250_report_turning B251_check_pushing_it_to B252_carry_out_pushing_it_to B253_report_pushing_it_to B254_check_squeezing B255_carry_out_squeezing B256_report_squeezing B257_check_saying_yes B258_carry_out_saying_yes B259_report_saying_yes B260_check_saying_no B261_carry_out_saying_no B262_report_saying_no B263_check_burning B264_carry_out_burning B265_report_burning B266_check_waking_up B267_carry_out_waking_up B268_report_waking_up B269_check_thinking B270_carry_out_thinking B271_report_thinking B272_check_smelling B273_carry_out_smelling B274_report_smelling B275_check_listening_to B276_carry_out_listening_to B277_report_listening_to B278_check_tasting B279_carry_out_tasting B280_report_tasting B281_check_cutting B282_carry_out_cutting B283_report_cutting B284_check_jumping B285_carry_out_jumping B286_report_jumping B287_check_tying_it_to B288_carry_out_tying_it_to B289_report_tying_it_to B290_check_drinking B291_carry_out_drinking B292_report_drinking B293_check_saying_sorry B294_carry_out_saying_sorry B295_report_saying_sorry B296_check_swinging B297_carry_out_swinging B298_report_swinging B299_check_rubbing B300_carry_out_rubbing B301_report_rubbing B302_check_setting_it_to B303_carry_out_setting_it_to B304_report_setting_it_to B305_check_waving_hands B306_carry_out_waving_hands B307_report_waving_hands B308_check_buying B309_carry_out_buying B310_report_buying B311_check_climbing B312_carry_out_climbing B313_report_climbing B314_check_sleeping B315_carry_out_sleeping B316_report_sleeping B317_check_quitting_the_game B318_carry_out_quitting_the_ B319_report_quitting_the_gam B320_check_saving_the_game B321_carry_out_saving_the_ga B322_report_saving_the_game B323_check_restoring_the_gam B324_carry_out_restoring_the B325_report_restoring_the_ga B326_check_restarting_the_ga B327_carry_out_restarting_th B328_report_restarting_the_g B329_check_verifying_the_sto B330_carry_out_verifying_the B331_report_verifying_the_st B332_check_switching_the_sto B333_carry_out_switching_the B334_report_switching_the_st B335_check_switching_the_sto B336_carry_out_switching_the B337_report_switching_the_st B338_check_requesting_the_st B339_carry_out_requesting_th B340_report_requesting_the_s B341_check_requesting_the_sc B342_carry_out_requesting_th B343_report_requesting_the_s B344_check_preferring_abbrev B345_carry_out_preferring_ab B346_report_preferring_abbre B347_check_preferring_unabbr B348_carry_out_preferring_un B349_report_preferring_unabb B350_check_preferring_someti B351_carry_out_preferring_so B352_report_preferring_somet B353_check_switching_score_n B354_carry_out_switching_sco B355_report_switching_score_ B356_check_switching_score_n B357_carry_out_switching_sco B358_report_switching_score_ B359_check_requesting_the_pr B360_carry_out_requesting_th B361_report_requesting_the_p B362_before_choice_displayin B363_for_choice_displaying B364_after_choice_displaying B365_choice_priority B366_before_displaying_avail B367_for_displaying_availabl B368_after_displaying_availa B369_choice_switch B370_page_switch B371_page_toggle B372_page_output B373_check_choosing B374_carry_out_choosing B375_report_choosing B376_before_selecting B377_for_selecting B378_after_selecting B379_general_choose_object B380_check_item_invoking B381_carry_out_item_invoking B382_report_item_invoking B383_check_toggling_cyoa_deb B384_carry_out_toggling_cyoa B385_report_toggling_cyoa_de 0;
 
 [ EMPTY_RULEBOOK 
     forbid_breaks ! Implied call parameter
@@ -26531,9 +26565,6 @@ Constant B383_check_toggling_cyoa_deb = EMPTY_RULEBOOK;
     return 0; ! 1 rule(s)
 ];
 Constant B385_report_toggling_cyoa_de = EMPTY_RULEBOOK;
-Constant B386_check_talking = EMPTY_RULEBOOK;
-Constant B387_carry_out_talking = EMPTY_RULEBOOK;
-Constant B388_report_talking = EMPTY_RULEBOOK;
 
 
 
@@ -27971,7 +28002,7 @@ Global MStack_Frame_Extent = 0;
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
 #IFNDEF MEMORY_ECONOMY;
-Array rulebook_var_creators --> 0 0 0 0 0 0 0 0 0 RBSTVC_9 0 RBSTVC_11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+Array rulebook_var_creators --> 0 0 0 0 0 0 0 0 0 RBSTVC_9 0 RBSTVC_11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 #endif;
 [  RBSTVC_9 
     pos ! Implied call parameter
@@ -29708,7 +29739,7 @@ Array FWMatrix --> NUM_ROOMS*NUM_ROOMS;
 ! Relations.i6t: Relation Route-Finding
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant MAX_ROUTE_LENGTH = 27 + 32;
+Constant MAX_ROUTE_LENGTH = 29 + 32;
 
 [ RelationRouteTo relation from to count  handler;
 	if (count) {
@@ -30890,9 +30921,6 @@ Array RulebookNames -->
     "check Toggling cyoa debug mode rulebook" ! 383
     "carry out Toggling cyoa debug mode rulebook" ! 384
     "report Toggling cyoa debug mode rulebook" ! 385
-    "check Talking rulebook" ! 386
-    "carry out Talking rulebook" ! 387
-    "report Talking rulebook" ! 388
 ;
 
 
@@ -49152,7 +49180,7 @@ Array Rel_Record_17 -->
     switch (task) {
         RELS_TEST: if (X == SupporterOf(Y)) rtrue; rfalse;
         RELS_LOOKUP_ANY: if (Y == RLANY_GET_X or RLANY_CAN_GET_X) {
-            for (Z1=nothing: false: ) {
+            for (Z1=IK6_First: Z1: Z1=Z1.IK6_Link) {
                 if (Rel_Handler_17(rr, RELS_TEST, Z1, X)) {
                     if (Y == RLANY_CAN_GET_X or RLANY_CAN_GET_Y) rtrue;
                     return Z1;
@@ -49172,7 +49200,7 @@ Array Rel_Record_17 -->
         }
         RELS_LOOKUP_ALL_X, RELS_LOOKUP_ALL_Y: LIST_OF_TY_SetLength(Y, 0);
         if (task == RELS_LOOKUP_ALL_X) {
-            for (Z1=nothing: false: ) {
+            for (Z1=IK6_First: Z1: Z1=Z1.IK6_Link) {
                 if (Rel_Handler_17(rr, RELS_TEST, Z1, X)) {
                     LIST_OF_TY_InsertItem(Y, Z1);
                 }
@@ -49187,7 +49215,7 @@ Array Rel_Record_17 -->
         return Y;
         RELS_LIST: LIST_OF_TY_SetLength(X, 0);
         if (Y == RLIST_ALL_X) {
-            for (Z1=nothing: false: ) {
+            for (Z1=IK6_First: Z1: Z1=Z1.IK6_Link) {
                 for (Z3=IK2_First: Z3: Z3=Z3.IK2_Link) {
                     if (Rel_Handler_17(rr, RELS_TEST, Z1, Z3)) {
                         LIST_OF_TY_InsertItem(X, Z1, false, 0, true);
@@ -49195,7 +49223,7 @@ Array Rel_Record_17 -->
                 }
             }
         } else if (Y == RLIST_ALL_Y) {
-            for (Z1=nothing: false: ) {
+            for (Z1=IK6_First: Z1: Z1=Z1.IK6_Link) {
                 for (Z3=IK2_First: Z3: Z3=Z3.IK2_Link) {
                     if (Rel_Handler_17(rr, RELS_TEST, Z1, Z3)) {
                         LIST_OF_TY_InsertItem(X, Z3, false, 0, true);
@@ -52489,45 +52517,48 @@ Verb 'cyoa'
 
 
 
-Constant TX_PS_65 = ">";
+Constant TX_PS_69 = ">";
 Constant TX_PS_3 = "An Interactive Fiction";
 Constant TX_PS_33 = "As good-looking as ever.";
-Constant TX_PS_64 = "Ask him to continue.";
-Constant TX_PS_66 = "Fiction";
-Constant TX_PS_53 = "Gravell is your right-hand man. He's loyal and he knows how to keep his mouth shut.";
-Constant TX_PS_43 = "Green and luscious. The riff-raff are behind the fence on the otherside of this.";
+Constant TX_PS_68 = "Ask him to leave it on your desk.";
+Constant TX_PS_70 = "Fiction";
+Constant TX_PS_55 = "Gravell is your right-hand man. He's loyal and he knows how to keep his mouth shut.";
+Constant TX_PS_65 = "Gravell: ~Very good, Sir.~";
+Constant TX_PS_45 = "Green and luscious. The riff-raff are behind the fence on the otherside of this.";
 Constant TX_PS_2 = "Head of State";
 Constant TX_PS_41 = "Heavy and ancient. Clearly well used, but in fantastic condition nonetheless.";
-Constant TX_PS_56 = "It's an offical document. A bill that needs your approval if it is to survive. Something about funding for healthcare for the poorest and most needy citizens of this great country: Not something you are known for supporting.";
-Constant TX_PS_61 = "Just grunt.";
-Constant TX_PS_52 = "Martin Gravell";
+Constant TX_PS_58 = "It's an offical document. A bill that needs your approval if it is to survive. Something about funding for healthcare for the poorest and most needy citizens of this great country: Not something you are known for supporting.";
+Constant TX_PS_63 = "Just grunt.";
+Constant TX_PS_54 = "Martin Gravell";
+Constant TX_PS_43 = "Now the bill";
 Constant TX_PS_36 = "Official Office";
-Constant TX_PS_62 = "P-GoAhead";
-Constant TX_PS_59 = "P-Grunt";
-Constant TX_PS_57 = "P-Introduction";
-Constant TX_PS_71 = "QUIT";
-Constant TX_PS_68 = "RESTART";
-Constant TX_PS_69 = "RESTORE a saved game";
-Constant TX_PS_67 = "That command isn't available in choice mode.";
-Constant TX_PS_47 = "The ceiling is ornately detailed with a scene depicting cherubs playing in an orchard.";
-Constant TX_PS_45 = "The chandelier hangs above your head. The golden finish is exquisite.";
+Constant TX_PS_61 = "P-Grunt";
+Constant TX_PS_59 = "P-Introduction";
+Constant TX_PS_64 = "P-IntroductionGiven";
+Constant TX_PS_66 = "P-LeaveBillOnDesk";
+Constant TX_PS_75 = "QUIT";
+Constant TX_PS_72 = "RESTART";
+Constant TX_PS_73 = "RESTORE a saved game";
+Constant TX_PS_71 = "That command isn't available in choice mode.";
+Constant TX_PS_49 = "The ceiling is ornately detailed with a scene depicting cherubs playing in an orchard.";
+Constant TX_PS_47 = "The chandelier hangs above your head. The golden finish is exquisite.";
 Constant TX_PS_39 = "The huge bay window provides a view of the lawn at the front of the building. The glass is immaculate. These windows are cleaned whenever the room isn't occupied.";
-Constant TX_PS_49 = "These are the people who led this country since its foundation over one hundred years ago. I'm better and smarter than them.";
+Constant TX_PS_51 = "These are the people who led this country since its foundation over one hundred years ago. I'm better and smarter than them.";
 Constant TX_PS_4 = "Tom Davies";
-Constant TX_PS_72 = "UNDO the last command";
-Constant TX_PS_60 = "You grunt to indicate that he can continue.";
-Constant TX_PS_58 = "You nod to Gravell.^^Gravell: ~Sir, the healthcare bill requires your attention~";
-Constant TX_PS_63 = "You: ~Go ahead, Gravell.~";
-Constant TX_PS_51 = "Your chair of the Head of State isn't too far from looking like a throne. When you picked your furniture it was important that your choice sent a message, and your message was a clear one of power, wealth and ruthlessness.";
+Constant TX_PS_76 = "UNDO the last command";
+Constant TX_PS_62 = "You grunt to indicate that he can continue.";
+Constant TX_PS_60 = "You nod to Gravell.^^Gravell: ~Sir, the healthcare bill requires your attention~";
+Constant TX_PS_67 = "You: ~Leave it on my desk, Gravell.~";
+Constant TX_PS_53 = "Your chair of the Head of State isn't too far from looking like a throne. When you picked your furniture it was important that your choice sent a message, and your message was a clear one of power, wealth and ruthlessness.";
 Constant TX_PS_37 = "Your office probably doesn't look much different now to how it did when each of your predecessors occupied it over the last century.^^Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.^^The things some men have done to make it to this room...";
-Constant TX_PS_54 = "Your senior advisor, Martin Gravell, stands patiently in front of your desk.";
+Constant TX_PS_56 = "Your senior advisor, Martin Gravell, stands patiently in front of your desk.";
 Constant TX_PS_34 = "Yourself";
 Constant TX_PS_9 = "animals";
 Constant TX_PS_14 = "backdrops";
-Constant TX_PS_55 = "bill";
-Constant TX_PS_46 = "ceiling";
-Constant TX_PS_50 = "chair of the head of state";
-Constant TX_PS_44 = "chandelier";
+Constant TX_PS_57 = "bill";
+Constant TX_PS_48 = "ceiling";
+Constant TX_PS_52 = "chair of the head of state";
+Constant TX_PS_46 = "chandelier";
 Constant TX_PS_11 = "containers";
 Constant TX_PS_40 = "desk";
 Constant TX_PS_15 = "devices";
@@ -52536,19 +52567,20 @@ Constant TX_PS_10 = "doors";
 Constant TX_PS_29 = "down";
 Constant TX_PS_26 = "east";
 Constant TX_PS_30 = "inside";
-Constant TX_PS_42 = "lawn";
+Constant TX_PS_44 = "lawn";
 Constant TX_PS_7 = "men";
 Constant TX_PS_35 = "no-page";
 Constant TX_PS_19 = "north";
 Constant TX_PS_21 = "northeast";
 Constant TX_PS_22 = "northwest";
+Constant TX_PS_42 = "now the bill";
 Constant TX_PS_31 = "outside";
 Constant TX_PS_18 = "pages";
 Constant TX_PS_6 = "people";
 Constant TX_PS_13 = "player's holdalls";
-Constant TX_PS_48 = "portraits";
+Constant TX_PS_50 = "portraits";
 Constant TX_PS_16 = "regions";
-Constant TX_PS_70 = "see some suggestions for AMUSING things to do";
+Constant TX_PS_74 = "see some suggestions for AMUSING things to do";
 Constant TX_PS_23 = "south";
 Constant TX_PS_24 = "southeast";
 Constant TX_PS_25 = "southwest";
@@ -59910,7 +59942,7 @@ Array BC_171 --> PACKED_TEXT_STORAGE TX_PS_40;
 Array BC_172 --> PACKED_TEXT_STORAGE TX_PS_41;
 Array BC_173 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_174 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_175 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_175 --> PACKED_TEXT_STORAGE TX_PS_5;
 Array BC_176 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_177 --> PACKED_TEXT_STORAGE TX_PS_42;
 Array BC_178 --> PACKED_TEXT_STORAGE TX_PS_43;
@@ -59918,71 +59950,84 @@ Array BC_179 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_180 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_181 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_182 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_183 --> PACKED_TEXT_STORAGE TX_PS_44;
-Array BC_184 --> PACKED_TEXT_STORAGE TX_PS_45;
-Array BC_185 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_183 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_184 --> PACKED_TEXT_STORAGE TX_PS_44;
+Array BC_185 --> PACKED_TEXT_STORAGE TX_PS_45;
 Array BC_186 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_187 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_188 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_189 --> PACKED_TEXT_STORAGE TX_PS_46;
-Array BC_190 --> PACKED_TEXT_STORAGE TX_PS_47;
-Array BC_191 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_189 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_190 --> PACKED_TEXT_STORAGE TX_PS_46;
+Array BC_191 --> PACKED_TEXT_STORAGE TX_PS_47;
 Array BC_192 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_193 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_194 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_195 --> PACKED_TEXT_STORAGE TX_PS_48;
-Array BC_196 --> PACKED_TEXT_STORAGE TX_PS_49;
-Array BC_197 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_195 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_196 --> PACKED_TEXT_STORAGE TX_PS_48;
+Array BC_197 --> PACKED_TEXT_STORAGE TX_PS_49;
 Array BC_198 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_199 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_200 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_201 --> PACKED_TEXT_STORAGE TX_PS_50;
-Array BC_202 --> PACKED_TEXT_STORAGE TX_PS_51;
-Array BC_203 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_201 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_202 --> PACKED_TEXT_STORAGE TX_PS_50;
+Array BC_203 --> PACKED_TEXT_STORAGE TX_PS_51;
 Array BC_204 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_205 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_206 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_207 --> PACKED_TEXT_STORAGE TX_PS_52;
-Array BC_208 --> PACKED_TEXT_STORAGE TX_PS_53;
-Array BC_209 --> PACKED_TEXT_STORAGE TX_PS_54;
+Array BC_207 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_208 --> PACKED_TEXT_STORAGE TX_PS_52;
+Array BC_209 --> PACKED_TEXT_STORAGE TX_PS_53;
 Array BC_210 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_211 --> PACKED_TEXT_STORAGE TX_PS_7;
+Array BC_211 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_212 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_213 --> PACKED_TEXT_STORAGE TX_PS_55;
-Array BC_214 --> PACKED_TEXT_STORAGE TX_PS_56;
-Array BC_215 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_216 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_213 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_214 --> PACKED_TEXT_STORAGE TX_PS_54;
+Array BC_215 --> PACKED_TEXT_STORAGE TX_PS_55;
+Array BC_216 --> PACKED_TEXT_STORAGE TX_PS_56;
 Array BC_217 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_218 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_219 --> PACKED_TEXT_STORAGE TX_PS_57;
-Array BC_220 --> PACKED_TEXT_STORAGE TX_PS_58;
-Array BC_221 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_218 --> PACKED_TEXT_STORAGE TX_PS_7;
+Array BC_219 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_220 --> PACKED_TEXT_STORAGE TX_PS_57;
+Array BC_221 --> PACKED_TEXT_STORAGE TX_PS_58;
 Array BC_222 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_223 --> PACKED_TEXT_STORAGE TX_PS_18;
+Array BC_223 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_224 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_225 --> PACKED_TEXT_STORAGE TX_PS_59;
-Array BC_226 --> PACKED_TEXT_STORAGE TX_PS_60;
-Array BC_227 --> PACKED_TEXT_STORAGE TX_PS_61;
+Array BC_225 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_226 --> PACKED_TEXT_STORAGE TX_PS_59;
+Array BC_227 --> PACKED_TEXT_STORAGE TX_PS_60;
 Array BC_228 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_229 --> PACKED_TEXT_STORAGE TX_PS_18;
-Array BC_230 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_231 --> PACKED_TEXT_STORAGE TX_PS_62;
-Array BC_232 --> PACKED_TEXT_STORAGE TX_PS_63;
-Array BC_233 --> PACKED_TEXT_STORAGE TX_PS_64;
-Array BC_234 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_235 --> PACKED_TEXT_STORAGE TX_PS_18;
-Array BC_236 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_237 --> PACKED_TEXT_STORAGE TX_PS_65;
-Array BC_238 --> PACKED_TEXT_STORAGE TX_PS_4;
-Array BC_239 --> PACKED_TEXT_STORAGE TX_PS_3;
-Array BC_240 --> PACKED_TEXT_STORAGE TX_PS_66;
+Array BC_229 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_230 --> PACKED_TEXT_STORAGE TX_PS_18;
+Array BC_231 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_232 --> PACKED_TEXT_STORAGE TX_PS_61;
+Array BC_233 --> PACKED_TEXT_STORAGE TX_PS_62;
+Array BC_234 --> PACKED_TEXT_STORAGE TX_PS_63;
+Array BC_235 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_236 --> PACKED_TEXT_STORAGE TX_PS_18;
+Array BC_237 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_238 --> PACKED_TEXT_STORAGE TX_PS_64;
+Array BC_239 --> PACKED_TEXT_STORAGE TX_PS_65;
+Array BC_240 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_241 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_242 --> PACKED_TEXT_STORAGE TX_PS_67;
-Array BC_243 --> PACKED_TEXT_STORAGE TX_PS_68;
-Array BC_244 --> PACKED_TEXT_STORAGE TX_PS_69;
-Array BC_245 --> PACKED_TEXT_STORAGE TX_PS_70;
-Array BC_246 --> PACKED_TEXT_STORAGE TX_PS_71;
-Array BC_247 --> PACKED_TEXT_STORAGE TX_PS_72;
+Array BC_242 --> PACKED_TEXT_STORAGE TX_PS_18;
+Array BC_243 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_244 --> PACKED_TEXT_STORAGE TX_PS_66;
+Array BC_245 --> PACKED_TEXT_STORAGE TX_PS_67;
+Array BC_246 --> PACKED_TEXT_STORAGE TX_PS_68;
+Array BC_247 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_248 --> PACKED_TEXT_STORAGE TX_PS_18;
+Array BC_249 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_250 --> PACKED_TEXT_STORAGE TX_PS_69;
+Array BC_251 --> PACKED_TEXT_STORAGE TX_PS_4;
+Array BC_252 --> PACKED_TEXT_STORAGE TX_PS_3;
+Array BC_253 --> PACKED_TEXT_STORAGE TX_PS_70;
+Array BC_254 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_255 --> PACKED_TEXT_STORAGE TX_PS_71;
+Array BC_256 --> PACKED_TEXT_STORAGE TX_PS_72;
+Array BC_257 --> PACKED_TEXT_STORAGE TX_PS_73;
+Array BC_258 --> PACKED_TEXT_STORAGE TX_PS_74;
+Array BC_259 --> PACKED_TEXT_STORAGE TX_PS_75;
+Array BC_260 --> PACKED_TEXT_STORAGE TX_PS_76;
 
 
 

@@ -39,6 +39,8 @@ Portraits of stern old white men hang on the walls, a huge candelier hangs down 
 
 The things some men have done to make it to this room...
 
+On the desk is Now the bill.
+
 Your senior advisor, Martin Gravell, stands patiently in front of your desk.
 
 &gt;</result>
@@ -48,8 +50,10 @@ Your senior advisor, Martin Gravell, stands patiently in front of your desk.
             <child nodeId="node-1188"></child>
             <child nodeId="node-1179"></child>
             <child nodeId="node-1168"></child>
+            <child nodeId="node-1212"></child>
             <child nodeId="node-1178"></child>
             <child nodeId="node-1176"></child>
+            <child nodeId="node-1203"></child>
             <child nodeId="node-1172"></child>
             <child nodeId="node-1171"></child>
             <child nodeId="node-1182"></child>
@@ -136,6 +140,42 @@ You grunt to indicate that he can continue.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-1203">
+        <command xml:space="preserve">examine painting</command>
+        <result xml:space="preserve">These are the people who led this country since its foundation over one hundred years ago. I'm better and smarter than them.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1204"></child>
+        </children>
+    </item>
+    <item nodeId="node-1204">
+        <command xml:space="preserve">examine Gravell</command>
+        <result xml:space="preserve">Gravell is your right-hand man. He's loyal and he knows how to keep his mouth shut.
+
+You nod to Gravell.
+
+Gravell: "Sir, the healthcare bill requires your attention"
+
+1) Just grunt.
+2) Ask him to leave it on your desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1205"></child>
+        </children>
+    </item>
+    <item nodeId="node-1205">
+        <command xml:space="preserve">1</command>
+        <result xml:space="preserve">[Just grunt.]
+
+You grunt to indicate that he can continue.
+
+1) 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-1176">
         <command xml:space="preserve">examine myself</command>
         <result xml:space="preserve">A droopy face, too much makeup, a bit on the heavy side. Not that you are willing to acknowledge any of the negatives. You're important. You've always been important. If someone disagrees with you they must be wrong - and your expression shows it.
@@ -155,6 +195,52 @@ You grunt to indicate that he can continue.
     <item nodeId="node-1178">
         <command xml:space="preserve">examine martin gravell</command>
         <result xml:space="preserve">Gravell is your right-hand man. He's loyal and he knows how to keep his mouth shut.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1212">
+        <command xml:space="preserve">examine martin</command>
+        <result xml:space="preserve">Gravell is your right-hand man. He's loyal and he knows how to keep his mouth shut.
+
+You nod to Gravell.
+
+Gravell: "Sir, the healthcare bill requires your attention"
+
+1) Just grunt.
+2) Ask him to leave it on your desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1213"></child>
+            <child nodeId="node-1219"></child>
+        </children>
+    </item>
+    <item nodeId="node-1219">
+        <command xml:space="preserve">2</command>
+        <result xml:space="preserve">[Ask him to leave it on your desk.]
+
+You: "Leave it on my desk, Gravell."
+
+Gravell: "Very good, Sir."
+
+Official Office
+Your office probably doesn't look much different now to how it did when each of your predecessors occupied it over the last century.
+
+Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
+
+The things some men have done to make it to this room...
+
+On the desk is Now the bill.
+
+Your senior advisor, Martin Gravell, stands patiently in front of your desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1213">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -182,6 +268,9 @@ You grunt to indicate that he can continue.
 You nod to Gravell.
 
 Gravell: "Sir, the healthcare bill requires your attention"
+
+1) Just grunt.
+2) Ask him to leave it on your desk.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -212,6 +301,15 @@ Gravell: "Sir, the healthcare bill requires your attention"
 
 You grunt to indicate that he can continue.
 
+Gravell: "Very good, Sir."
+
+You nod to Gravell.
+
+Gravell: "Sir, the healthcare bill requires your attention"
+
+1) Just grunt.
+2) Ask him to leave it on your desk.
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
@@ -231,7 +329,7 @@ You nod to Gravell.
 Gravell: "Sir, the healthcare bill requires your attention"
 
 1) Just grunt.
-2) Ask him to continue.
+2) Ask him to leave it on your desk.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -241,9 +339,11 @@ Gravell: "Sir, the healthcare bill requires your attention"
     </item>
     <item nodeId="node-1196">
         <command xml:space="preserve">2</command>
-        <result xml:space="preserve">[Ask him to continue.]
+        <result xml:space="preserve">[Ask him to leave it on your desk.]
 
-You: "Go ahead, Gravell."
+You: "Leave it on my desk, Gravell."
+
+1) 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -257,7 +357,21 @@ You: "Go ahead, Gravell."
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1198"></child>
+            <child nodeId="node-1209"></child>
         </children>
+    </item>
+    <item nodeId="node-1209">
+        <command xml:space="preserve">1</command>
+        <result xml:space="preserve">[]
+
+Gravell: "Very good, Sir."
+
+You: "Leave it on my desk, Gravell."
+
+1) 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1198">
         <command xml:space="preserve"></command>
@@ -270,7 +384,20 @@ You: "Go ahead, Gravell."
         <command xml:space="preserve">1</command>
         <result xml:space="preserve">[Just grunt.]
 
-You grunt.
+You grunt to indicate that he can continue.
+
+Gravell: "Very good, Sir."
+
+Official Office
+Your office probably doesn't look much different now to how it did when each of your predecessors occupied it over the last century.
+
+Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
+
+The things some men have done to make it to this room...
+
+On the desk is Now the bill.
+
+Your senior advisor, Martin Gravell, stands patiently in front of your desk.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

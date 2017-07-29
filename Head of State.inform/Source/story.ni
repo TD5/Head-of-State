@@ -69,7 +69,7 @@ The bill is carried by Martin Gravell. Description is "It's an offical document.
 
 Martin Gravell is a man in the official office. "Your senior advisor, Martin Gravell, stands patiently in front of your desk." Description is "Gravell is your right-hand man. He's loyal and he knows how to keep his mouth shut."
 
-Talking is an action applying to one visible thing.
+Section - Introduction
 
 After examining Gravell:
 	If GameState is WaitingForIntroduction:
@@ -80,9 +80,16 @@ P-Introduction is a page. It is a one-off.
 
 Gravell: 'Sir, the healthcare bill requires your attention'"
 
-P-Grunt is a page.
+P-Grunt is a page. It is for P-Introduction.
 "You grunt to indicate that he can continue."
-The cdesc is "Just grunt.". It is for P-Introduction.
-P-GoAhead is a page.
-"You: 'Go ahead, Gravell.'"
-The cdesc is "Ask him to continue.". It is for P-Introduction.
+It flips to P-IntroductionGiven.
+The cdesc is "Just grunt.".
+
+P-LeaveBillOnDesk is a page. It is for P-Introduction.
+"You: 'Leave it on my desk, Gravell.'"
+It flips to P-IntroductionGiven.
+The cdesc is "Ask him to leave it on your desk.".
+
+P-IntroductionGiven is a page. It is flipped to by P-Grunt and P-LeaveBillOnDesk. It is an end-page.
+"Gravell: 'Very good, Sir.'".
+now the bill is on the desk.
