@@ -119,6 +119,7 @@ A page-toggle rule for P-IntroductionGiven:
 	
 Section - The Signing
 
+[TODO Fix the logic below by separating out logic for signing or destroying the bill]
 Instead of signing the bill:
 	If current_game_state is not WaitingForIntroduction:
 		[TODO Change game state]
