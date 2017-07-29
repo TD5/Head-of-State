@@ -30,12 +30,12 @@ You're going to have to work hard if you want to stay in power: It's already beg
 
 Head of State
 An Interactive Fiction by Tom Davies
-Release 1 / Serial number 170729 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 170730 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Official Office
 Your office probably doesn't look much different now to how it did when each of your predecessors occupied it over the last century.
 
-Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
+Portraits of stern old white men hang on the walls, a huge chandelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
 
 The things some men have done to make it to this room...
 
@@ -68,12 +68,452 @@ Your senior advisor, Martin Gavell, stands patiently in front of your desk. It l
             <child nodeId="node-1434"></child>
             <child nodeId="node-1435"></child>
             <child nodeId="node-1431"></child>
+            <child nodeId="node-1491"></child>
+            <child nodeId="node-1443"></child>
             <child nodeId="node-1170"></child>
+            <child nodeId="node-1451"></child>
+            <child nodeId="node-1447"></child>
         </children>
+    </item>
+    <item nodeId="node-1447">
+        <command xml:space="preserve">talk to martin</command>
+        <result xml:space="preserve">You nod to Gavell.
+
+Gavell: "Sir, the healthcare bill requires your attention."
+
+1) Just grunt.
+2) Ask for the bill.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1456"></child>
+            <child nodeId="node-1448"></child>
+        </children>
+    </item>
+    <item nodeId="node-1448">
+        <command xml:space="preserve">2</command>
+        <result xml:space="preserve">[Ask for the bill.]
+
+You: "Hand it over, Gavell."
+
+Gavell: "Here you are, Sir."
+
+Gavell gives the bill to you.
+
+Official Office
+Your office probably doesn't look much different now to how it did when each of your predecessors occupied it over the last century.
+
+Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
+
+The things some men have done to make it to this room...
+
+Your senior advisor, Martin Gavell, stands patiently in front of your desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1449"></child>
+        </children>
+    </item>
+    <item nodeId="node-1449">
+        <command xml:space="preserve">eat the bill</command>
+        <result xml:space="preserve">I only understood you as far as wanting to eat the chair of the head of state.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1450"></child>
+        </children>
+    </item>
+    <item nodeId="node-1450">
+        <command xml:space="preserve">inventory</command>
+        <result xml:space="preserve">You are carrying nothing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1456">
+        <command xml:space="preserve">1</command>
+        <result xml:space="preserve">[Just grunt.]
+
+You grunt to indicate that he can continue.
+
+Gavell: "Here you are, Sir."
+
+Gavell gives the bill to you.
+
+Official Office
+Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
+
+Your senior advisor, Martin Gavell, stands patiently in front of your desk.
+
+You have possession of the healthcare bill.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1464"></child>
+            <child nodeId="node-1461"></child>
+            <child nodeId="node-1487"></child>
+            <child nodeId="node-1457"></child>
+            <child nodeId="node-1497"></child>
+        </children>
+    </item>
+    <item nodeId="node-1497">
+        <command xml:space="preserve">sign the bill</command>
+        <result xml:space="preserve">You sign the bill into law and an aid takes it away for safe keeping.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1457">
+        <command xml:space="preserve">inventory</command>
+        <result xml:space="preserve">You are carrying:
+  a healthcare bill
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1458"></child>
+        </children>
+    </item>
+    <item nodeId="node-1458">
+        <command xml:space="preserve">eat bill</command>
+        <result xml:space="preserve">You momentarily pause as you decide exactly what you want to do.
+
+Gavell: "This won't go down well with the voters, SIr." You: "FUCK the voters.""
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1487">
+        <command xml:space="preserve">examine office</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1488"></child>
+        </children>
+    </item>
+    <item nodeId="node-1488">
+        <command xml:space="preserve">examine official office</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1489"></child>
+        </children>
+    </item>
+    <item nodeId="node-1489">
+        <command xml:space="preserve">examine room</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1490"></child>
+        </children>
+    </item>
+    <item nodeId="node-1490">
+        <command xml:space="preserve">look around</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1461">
+        <command xml:space="preserve">eat bill</command>
+        <result xml:space="preserve">You momentarily pause as you decide exactly what you want to do.
+
+1) Reject the bill.
+2) Destroy the bill.
+3) Destroy the bill with extreme prejudice.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1476"></child>
+        </children>
+    </item>
+    <item nodeId="node-1476">
+        <command xml:space="preserve">3</command>
+        <result xml:space="preserve">
+Gavell: "This won't go down well with the voters, SIr."
+
+You: "FUCK the voters."
+
+Official Office
+Your office probably doesn't look much different now to how it did when each of your predecessors occupied it over the last century.
+
+Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
+
+The things some men have done to make it to this room...
+
+Your senior advisor, Martin Gavell, stands patiently in front of your desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1464">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1465"></child>
+        </children>
+    </item>
+    <item nodeId="node-1465">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1466"></child>
+        </children>
+    </item>
+    <item nodeId="node-1466">
+        <command xml:space="preserve">eat bill</command>
+        <result xml:space="preserve">You momentarily pause as you decide exactly what you want to do.
+
+1) Reject the bill.
+2) Destroy the bill.
+3) Destroy the bill with extreme prejudice.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1467"></child>
+        </children>
+    </item>
+    <item nodeId="node-1467">
+        <command xml:space="preserve">1</command>
+        <result xml:space="preserve">[Reject the bill.]
+
+You refuse to sign the bill and tell your aide to inform the relevant people.
+
+Gavell: "This won't go down well with the liberals, SIr." You: "I don't care about the liberals""
+
+Official Office
+Your office probably doesn't look much different now to how it did when each of your predecessors occupied it over the last century.
+
+Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
+
+The things some men have done to make it to this room...
+
+Your senior advisor, Martin Gavell, stands patiently in front of your desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1468"></child>
+        </children>
+    </item>
+    <item nodeId="node-1468">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Official Office
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1469"></child>
+        </children>
+    </item>
+    <item nodeId="node-1469">
+        <command xml:space="preserve">eat bill</command>
+        <result xml:space="preserve">That command isn't available in choice mode.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1470"></child>
+        </children>
+    </item>
+    <item nodeId="node-1470">
+        <command xml:space="preserve">2</command>
+        <result xml:space="preserve">[Destroy the bill.]
+
+You mutter "absolute garbage" as you rip up the bill and throw it away.
+
+Gavell: "This won't go down well with the liberals, SIr." You: "I don't care about the liberals""
+
+Official Office
+Your office probably doesn't look much different now to how it did when each of your predecessors occupied it over the last century.
+
+Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
+
+The things some men have done to make it to this room...
+
+Your senior advisor, Martin Gavell, stands patiently in front of your desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1471"></child>
+        </children>
+    </item>
+    <item nodeId="node-1471">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Official Office
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1472"></child>
+        </children>
+    </item>
+    <item nodeId="node-1472">
+        <command xml:space="preserve">3</command>
+        <result xml:space="preserve">and spit on it
+Gavell: "This won't go down well with the voters, SIr." You: "FUCK the voters.""
+
+Official Office
+Your office probably doesn't look much different now to how it did when each of your predecessors occupied it over the last century.
+
+Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
+
+The things some men have done to make it to this room...
+
+Your senior advisor, Martin Gavell, stands patiently in front of your desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1451">
+        <command xml:space="preserve">talk martin</command>
+        <result xml:space="preserve">I didn't understand that sentence.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1452"></child>
+        </children>
+    </item>
+    <item nodeId="node-1452">
+        <command xml:space="preserve">talk to martin</command>
+        <result xml:space="preserve">You nod to Gavell.
+
+Gavell: "Sir, the healthcare bill requires your attention."
+
+1) Just grunt.
+2) Ask for the bill.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1453"></child>
+        </children>
+    </item>
+    <item nodeId="node-1453">
+        <command xml:space="preserve">1</command>
+        <result xml:space="preserve">[Just grunt.]
+
+You grunt to indicate that he can continue.
+
+Gavell: "Here you are, Sir."
+
+Gavell gives the bill to you.
+
+Official Office
+Your office probably doesn't look much different now to how it did when each of your predecessors occupied it over the last century.
+
+Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
+
+The things some men have done to make it to this room...
+
+Your senior advisor, Martin Gavell, stands patiently in front of your desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1454"></child>
+        </children>
+    </item>
+    <item nodeId="node-1454">
+        <command xml:space="preserve">eat bill</command>
+        <result xml:space="preserve">You momentarily pause as you decide exactly what to do."
+
+Gavell: "This won't go down well with the voters, SIr." You: "FUCK the voters.""
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1170">
         <command xml:space="preserve">take desk</command>
         <result xml:space="preserve">That's hardly portable.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1443">
+        <command xml:space="preserve">speak to martin</command>
+        <result xml:space="preserve">You nod to Gavell.
+
+Gavell: "Sir, the healthcare bill requires your attention."
+
+1) Just grunt.
+2) Ask for the bill.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1444"></child>
+        </children>
+    </item>
+    <item nodeId="node-1444">
+        <command xml:space="preserve">§</command>
+        <result xml:space="preserve">That command isn't available in choice mode.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1445"></child>
+        </children>
+    </item>
+    <item nodeId="node-1445">
+        <command xml:space="preserve">1</command>
+        <result xml:space="preserve">[Just grunt.]
+
+You grunt to indicate that he can continue.
+
+Gavell: "Here you are, Sir."
+
+Gavell gives the bill to you.
+
+Official Office
+Your office probably doesn't look much different now to how it did when each of your predecessors occupied it over the last century.
+
+Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
+
+The things some men have done to make it to this room...
+
+Your senior advisor, Martin Gavell, stands patiently in front of your desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1446"></child>
+        </children>
+    </item>
+    <item nodeId="node-1446">
+        <command xml:space="preserve">destroy desk</command>
+        <result xml:space="preserve">Violence isn't the answer to this one.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1491">
+        <command xml:space="preserve">speak to gavell</command>
+        <result xml:space="preserve">You nod to Gavell.
+
+Gavell: "Sir, the healthcare bill requires your attention."
+
+1) Just grunt.
+2) Ask for the bill.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1492"></child>
+        </children>
+    </item>
+    <item nodeId="node-1492">
+        <command xml:space="preserve">2</command>
+        <result xml:space="preserve">[Ask for the bill.]
+
+You: "Hand it over, Gavell."
+
+Gavell: "Here you are, Sir."
+
+Gavell gives the bill to you.
+
+Official Office
+Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
+
+Your senior advisor, Martin Gavell, stands patiently in front of your desk.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

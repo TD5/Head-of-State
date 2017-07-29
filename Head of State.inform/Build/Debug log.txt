@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app/Contents/Resources/In
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 1270 words long.
+I've now read your source text, which is 1577 words long.
 
 
 -----------------------------------------------------
@@ -25,8 +25,8 @@ I've also read Standard Rules by Graham Nelson, which is 42655 words long.
 I've also read English Language by Graham Nelson, which is 2297 words long.
 I've also read Hybrid Choices by AW Freyr, which is 10393 words long.
 I've also read Basic Help Menu by Emily Short, which is 2368 words long.
-I've also read Menus by Emily Short, which is 2001 words long.
 I've also read Basic Screen Effects by Emily Short, which is 2218 words long.
+I've also read Menus by Emily Short, which is 2001 words long.
 
 
 -----------------------------------------------------
@@ -179,7 +179,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 116 files written as streams.
-CPU time: 189 centiseconds
+CPU time: 172 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

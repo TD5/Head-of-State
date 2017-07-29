@@ -11,28 +11,28 @@
     </dict>
     <key>1</key><dict>
         <key>Filename</key><string>/Users/tom/Documents/Games/Interactive Fiction/Head of State/Head of State.inform/Source/story.ni</string>
-        <key>Line</key><integer>65</integer>
+        <key>Line</key><integer>66</integer>
         <key>Title</key><string>Section - The Official Office</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>2</key><dict>
         <key>Filename</key><string>/Users/tom/Documents/Games/Interactive Fiction/Head of State/Head of State.inform/Source/story.ni</string>
-        <key>Line</key><integer>96</integer>
+        <key>Line</key><integer>99</integer>
         <key>Title</key><string>Section - Introduction</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>3</key><dict>
         <key>Filename</key><string>/Users/tom/Documents/Games/Interactive Fiction/Head of State/Head of State.inform/Source/story.ni</string>
-        <key>Line</key><integer>127</integer>
+        <key>Line</key><integer>131</integer>
         <key>Title</key><string>Section - The Signing</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>4</key><dict>
         <key>Filename</key><string>/Users/tom/Documents/Games/Interactive Fiction/Head of State/Head of State.inform/Source/story.ni</string>
-        <key>Line</key><integer>154</integer>
+        <key>Line</key><integer>203</integer>
         <key>Title</key><string>Section - The Bribery Scandal</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
@@ -1164,72 +1164,72 @@
         <key>Indentation</key><integer>0</integer>
     </dict>
     <key>166</key><dict>
-        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/menus.i7x</string>
-        <key>Line</key><integer>1</integer>
-        <key>Title</key><string>Version 3 of Menus by Emily Short begins here</string>
-        <key>Level</key><integer>0</integer>
-        <key>Indentation</key><integer>0</integer>
-    </dict>
-    <key>167</key><dict>
-        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/menus.i7x</string>
-        <key>Line</key><integer>9</integer>
-        <key>Title</key><string>Section 1</string>
-        <key>Level</key><integer>5</integer>
-        <key>Indentation</key><integer>1</integer>
-    </dict>
-    <key>168</key><dict>
-        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/menus.i7x</string>
-        <key>Line</key><integer>208</integer>
-        <key>Title</key><string>Section 2 (for Glulx only)</string>
-        <key>Level</key><integer>5</integer>
-        <key>Indentation</key><integer>1</integer>
-    </dict>
-    <key>169</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/basic screen effects.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Version 7/140425 of Basic Screen Effects by Emily Short begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>170</key><dict>
+    <key>167</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/basic screen effects.i7x</string>
         <key>Line</key><integer>9</integer>
         <key>Title</key><string>Section - Clearing the screen</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>171</key><dict>
+    <key>168</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/basic screen effects.i7x</string>
         <key>Line</key><integer>22</integer>
         <key>Title</key><string>Section - Waiting for key-presses, quitting suddenly</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>172</key><dict>
+    <key>169</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/basic screen effects.i7x</string>
         <key>Line</key><integer>85</integer>
         <key>Title</key><string>Section - Showing the current quotation</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>173</key><dict>
+    <key>170</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/basic screen effects.i7x</string>
         <key>Line</key><integer>92</integer>
         <key>Title</key><string>Section - Centering text on-screen</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>174</key><dict>
+    <key>171</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/basic screen effects.i7x</string>
         <key>Line</key><integer>146</integer>
         <key>Title</key><string>Section - Customizing the status line</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>175</key><dict>
+    <key>172</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/basic screen effects.i7x</string>
         <key>Line</key><integer>212</integer>
         <key>Title</key><string>Section - Color effects (for Z-machine only)</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>173</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/menus.i7x</string>
+        <key>Line</key><integer>1</integer>
+        <key>Title</key><string>Version 3 of Menus by Emily Short begins here</string>
+        <key>Level</key><integer>0</integer>
+        <key>Indentation</key><integer>0</integer>
+    </dict>
+    <key>174</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/menus.i7x</string>
+        <key>Line</key><integer>9</integer>
+        <key>Title</key><string>Section 1</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>175</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/menus.i7x</string>
+        <key>Line</key><integer>208</integer>
+        <key>Title</key><string>Section 2 (for Glulx only)</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>

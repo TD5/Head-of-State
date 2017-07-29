@@ -4,6 +4,7 @@ The story description is "The new Head of State for our great nation attempts to
 
 Include Hybrid Choices by AW Freyr.
 Include Basic Help Menu by Emily Short.
+Include Basic Screen Effects by Emily Short.
 
 Release along with an interpreter, cover art and a "LudumDare" website.
 
@@ -66,11 +67,11 @@ Section - The Official Office
 
 The Official Office is a room. "Your office probably doesn't look much different now to how it did when each of your predecessors occupied it over the last century.
 
-Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
+Portraits of stern old white men hang on the walls, a huge chandelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
 
 The things some men have done to make it to this room..."
 
-[TODO Add short room description]
+[TODO Add short-form room description]
 
 Instead of smelling the official office, say "The scent of tobacco smoke and brandy lingers in the room."
 
@@ -90,7 +91,9 @@ The chair of the head of state is scenery in the official office. Description is
 
 The healthcare bill is carried by Martin Gavell. Description is "It's an offical document. A bill that needs your approval if it is to survive. Something about funding for healthcare for the poorest and most needy citizens of this great country: Not something you are known for supporting.". The bill has a signedness called the state. The signedness of the bill is initially unsigned.
 
-Martin Gavell is a man in the official office. "Your senior advisor, Martin Gavell, stands patiently in front of your desk.[if current_game_state is WaitingForIntroduction] It looks like he's waiting for you to speak to him.[end if]". Description is "Gavell is your right-hand man. He's loyal and he knows how to keep his mouth shut."
+Martin Gavell is a man in the official office. "Your senior advisor, Martin Gavell, stands patiently in front of your desk.[if current_game_state is WaitingForIntroduction] It looks like he's waiting for you to speak to him.[end if][if player carries the bill]
+
+You have possession of the healthcare bill.[end if]". Description is "Gavell is your right-hand man. He's loyal and he knows how to keep his mouth shut."
 Understand "advisor" as Martin Gavell.
 
 Section - Introduction
@@ -121,6 +124,7 @@ P-IntroductionGiven is a page. It is flipped to by P-Grunt and P-LeaveBillOnDesk
 
 Gavell gives the bill to you.".
 A page-toggle rule for P-IntroductionGiven:
+	now the description of the official office is "Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.";
 	now the current_game_state is WaitingForBillSigning;
 	now the player carries the healthcare bill.
 	
@@ -141,12 +145,57 @@ Instead of signing the bill:
 	otherwise:
 		say "Why would I do that?".
 
-[TODO]	
-[otherwise:
-	say "You rip up the bill and throw it away.";
-	remove the bill from play;
-	[TODO Newspaper headline - no change in power / hippies shouting]
-	[TODO New game state]]
+P-DestroyChoice is a page. It is a one-off.
+"You momentarily pause as you decide exactly what you want to do."
+
+P-ThrowAwayBill is a page. It is for P-DestroyChoice.
+"You refuse to sign the bill and tell your aide to inform the relevant people."
+It flips to P-BillDestroyed.
+The cdesc is "Reject the bill.".
+
+P-DestroyBill is a page. It is for P-DestroyChoice.
+"You mutter 'absolute garbage' as you rip up the bill and throw it away."
+It flips to P-BillDestroyed.
+The cdesc is "Destroy the bill.".
+
+P-SpitOnBill is a page. It is for P-DestroyChoice.
+It flips to P-BillDestroyedWithPrejudice.
+The cdesc is "Destroy the bill with extreme prejudice.".
+A page-toggle rule for P-SpitOnBill:
+	say "You rip up the bill...
+	
+	[bracket]Press any key[close bracket]";
+	wait for any key;
+	say "
+	
+	...and spit on it
+	
+	[bracket]Press any key[close bracket]
+	
+	";
+	wait for any key;
+
+P-BillDestroyed is a page. It is flipped to by P-ThrowAwayBill and P-DestroyBill. It is an end-page.
+"Gavell: 'This won't go down well with the house, Sir.'
+
+You: 'I don't care about the house'".
+[TODO Newspaper headline - no change in power]
+A page-toggle rule for P-BillDestroyed:
+	now the current_game_state is HandlingBriberyScandal;
+	remove the bill from play.
+
+P-BillDestroyedWithPrejudice is a page. It is flipped to by P-SpitOnBill. It is an end-page.
+"Gavell: 'This won't go down well with the voters, Sir.'
+
+You: 'FUCK the voters.'".
+[TODO Newspaper headline - drop in power]
+A page-toggle rule for P-BillDestroyedWithPrejudice:
+	now the current_game_state is HandlingBriberyScandal;
+	decrease current political power by 1;
+	remove the bill from play.
+
+Instead of eating the bill:
+	switch to cyoa at P-DestroyChoice
 
 [TODO Nudge if they've not signed it for 5 turns: "Gavell: 'Sir, will you be signing the healthcare bill?'"]
 
