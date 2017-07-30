@@ -63,6 +63,15 @@ Signing is an action applying to one visible thing.
 Understand "sign [something]" as signing.
 Report signing: say "That would just be graffiti.".
 
+Understand the command "destroy" as something new.
+Destroying is an action applying to one visible thing.
+Understand "destroy [something]" as destroying.
+Understand "get rid of [something]" as destroying.
+Understand "rip up [something]" as destroying.
+Understand "rip [something]" as destroying.
+Understand "shred [something]" as destroying.
+Report destroying: say "I'm not sure that will help.".
+
 Signedness is a kind of value. The signednesses are signed and unsigned.
 
 Section - The Official Office
@@ -256,8 +265,9 @@ These leaks, which may yet transpire to be entirely false, have already damaged 
 
 ".
 
-Instead of eating the bill:
-	switch to cyoa at P-DestroyChoice
+Instead of destroying the bill:
+	if current_game_state is WaitingForBillSigning:
+		switch to cyoa at P-DestroyChoice
 
 [TODO Nudge if they've not signed it for 5 turns: "Gavell: 'Sir, will you be signing the healthcare bill?'"]
 
