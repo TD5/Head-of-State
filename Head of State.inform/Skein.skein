@@ -11,7 +11,9 @@
 
 TODAY'S NEWSPAPER FRONT PAGE
 
-In a shocking last minute swing, the country voted for a candidate who, only days ago, looked to be almost totally unelectable. The candidate only recently entered politics and now leads a fringe party, "Imperium", which has never previously garnered more than a few percent of the vote.
+A Surprising New Leader
+
+In a shocking last minute swing, the country voted for a candidate who, only days ago, looked to be almost totally unelectable. The candidate only recently entered politics and has now led a fringe party to power. A party which has never previously garnered more than a few percent of the vote.
 
 Politics isn't what it once was. These are volatile times and the people are eager for a leader who can change things. It's not clear what the voters want - it's not even clear that *they* know what they want - but it's clear the status quo is not it.
 
@@ -72,6 +74,7 @@ Your senior advisor, Martin Gavell, stands patiently in front of your desk. It l
             <child nodeId="node-1443"></child>
             <child nodeId="node-1170"></child>
             <child nodeId="node-1451"></child>
+            <child nodeId="node-1503"></child>
             <child nodeId="node-1447"></child>
         </children>
     </item>
@@ -150,15 +153,194 @@ You have possession of the healthcare bill.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1464"></child>
+            <child nodeId="node-1500"></child>
             <child nodeId="node-1461"></child>
             <child nodeId="node-1487"></child>
             <child nodeId="node-1457"></child>
+            <child nodeId="node-1553"></child>
             <child nodeId="node-1497"></child>
+            <child nodeId="node-1516"></child>
         </children>
+    </item>
+    <item nodeId="node-1516">
+        <command xml:space="preserve">talk to martin</command>
+        <result xml:space="preserve">Gavell: "You need to decide what to do with the healthcare bill, Sir."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1517"></child>
+            <child nodeId="node-1540"></child>
+        </children>
+    </item>
+    <item nodeId="node-1540">
+        <command xml:space="preserve">sign the bill</command>
+        <result xml:space="preserve"> ------
+
+TODAY'S NEWSPAPER FRONT PAGE
+
+Notable Healthcare Bill Passes In a surprising move, the country's new leader has passed the much debated healthcare bill. The passing of the bill has been welcomed by many opposing politicians, however there seems to be some dissatisfaction from the premier's core voter base.
+
+The shaking of the foundations of the Head of State's support has taken its toll. According to our latest calculations, his political power has sunk to 5/5 stars, moreover, his latest actions have raised questions around what this man really stands for.
+
+------ 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1517">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1497">
         <command xml:space="preserve">sign the bill</command>
-        <result xml:space="preserve">You sign the bill into law and an aid takes it away for safe keeping.
+        <result xml:space="preserve">------
+
+TODAY'S NEWSPAPER FRONT PAGE
+
+Notable Healthcare Bill Passes
+
+In a surprising move, the country's new leader has passed the much debated healthcare bill. The passing of the bill has been welcomed by many opposing politicians, however there seems to be some dissatisfaction from the premier's core voter base.
+
+The shaking of the foundations of the Head of State's support has taken its toll. According to our latest calculations, his political power has dipped to 4/5 stars, moreover, his latest actions have raised questions around what this man really stands for. Perhaps this recent change of heart is the beginning of something much greater. Only time will tell.
+
+------
+
+You look over your office once again. Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1561"></child>
+            <child nodeId="node-1533"></child>
+        </children>
+    </item>
+    <item nodeId="node-1533">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Official Office
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1534"></child>
+        </children>
+    </item>
+    <item nodeId="node-1534">
+        <command xml:space="preserve">destroy the bill</command>
+        <result xml:space="preserve">Violence isn't the answer to this one.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1535"></child>
+        </children>
+    </item>
+    <item nodeId="node-1535">
+        <command xml:space="preserve">eat the bill</command>
+        <result xml:space="preserve">You momentarily pause as you decide exactly what you want to do.
+
+1) Reject the bill.
+2) Destroy the bill.
+3) Destroy the bill with extreme prejudice.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1536"></child>
+        </children>
+    </item>
+    <item nodeId="node-1536">
+        <command xml:space="preserve">3</command>
+        <result xml:space="preserve"> ------
+
+TODAY'S NEWSPAPER FRONT PAGE
+
+Premier Spits on the Poor Leaks from inside the the office of our new leader suggest that he may have gone as far as spitting on the recent healthcare bill whilst refusing to sign it in a fit of rage.
+
+These leaks, which may yet transpire to be entirely false, have already damaged the new Head of State. According to our latest calculations, his political power has sunk to 4/5 stars, and there may be more fallout in store for him.
+
+------ 
+Official Office
+Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
+
+Your senior advisor, Martin Gavell, stands patiently in front of your desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1561">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1562"></child>
+        </children>
+    </item>
+    <item nodeId="node-1562">
+        <command xml:space="preserve">look up</command>
+        <result xml:space="preserve">You see nothing unexpected in that direction.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1563"></child>
+        </children>
+    </item>
+    <item nodeId="node-1563">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1553">
+        <command xml:space="preserve">sign bill</command>
+        <result xml:space="preserve">------
+
+TODAY'S NEWSPAPER FRONT PAGE
+
+Notable Healthcare Bill Passes
+
+In a surprising move, the country's new leader has passed the much debated healthcare bill. The passing of the bill has been welcomed by many opposing politicians, however there seems to be some dissatisfaction from the premier's core voter base.
+
+The shaking of the foundations of the Head of State's support has taken its toll. According to our latest calculations, his political power has dipped to 4/5 stars, moreover, his latest actions have raised questions around what this man really stands for. Perhaps this recent change of heart is the beginning of something much greater. Only time will tell.
+
+------ 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1554"></child>
+        </children>
+    </item>
+    <item nodeId="node-1554">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1555"></child>
+        </children>
+    </item>
+    <item nodeId="node-1555">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1556"></child>
+        </children>
+    </item>
+    <item nodeId="node-1556">
+        <command xml:space="preserve">examine room</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1557"></child>
+        </children>
+    </item>
+    <item nodeId="node-1557">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Official Office
+Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
+
+Your senior advisor, Martin Gavell, stands patiently in front of your desk.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -242,6 +424,89 @@ Your office probably doesn't look much different now to how it did when each of 
 Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
 
 The things some men have done to make it to this room...
+
+Your senior advisor, Martin Gavell, stands patiently in front of your desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1500">
+        <command xml:space="preserve">destroy the bill</command>
+        <result xml:space="preserve">Violence isn't the answer to this one.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1501"></child>
+        </children>
+    </item>
+    <item nodeId="node-1501">
+        <command xml:space="preserve">eat the bill</command>
+        <result xml:space="preserve">You momentarily pause as you decide exactly what you want to do.
+
+1) Reject the bill.
+2) Destroy the bill.
+3) Destroy the bill with extreme prejudice.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1511"></child>
+            <child nodeId="node-1502"></child>
+        </children>
+    </item>
+    <item nodeId="node-1502">
+        <command xml:space="preserve">3</command>
+        <result xml:space="preserve">
+Gavell: "This won't go down well with the voters, Sir."
+
+You: "FUCK the voters."
+
+Official Office
+Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
+
+Your senior advisor, Martin Gavell, stands patiently in front of your desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1511">
+        <command xml:space="preserve">1</command>
+        <result xml:space="preserve">[Reject the bill.]
+
+You refuse to sign the bill and tell your aide to inform the relevant people.
+
+Gavell: "This won't go down well with the house, Sir."
+
+You: "I don't care about the house"
+
+Official Office
+Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
+
+Your senior advisor, Martin Gavell, stands patiently in front of your desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1512"></child>
+        </children>
+    </item>
+    <item nodeId="node-1512">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Official Office
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1513"></child>
+        </children>
+    </item>
+    <item nodeId="node-1513">
+        <command xml:space="preserve">3</command>
+        <result xml:space="preserve">
+Gavell: "This won't go down well with the voters, Sir."
+
+You: "FUCK the voters."
+
+Official Office
+Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
 
 Your senior advisor, Martin Gavell, stands patiently in front of your desk.
 
@@ -367,6 +632,199 @@ The things some men have done to make it to this room...
 Your senior advisor, Martin Gavell, stands patiently in front of your desk.
 
 &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1503">
+        <command xml:space="preserve">talk to gavell</command>
+        <result xml:space="preserve">You nod to Gavell.
+
+Gavell: "Sir, the healthcare bill requires your attention."
+
+1) Just grunt.
+2) Ask for the bill.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1504"></child>
+            <child nodeId="node-1519"></child>
+        </children>
+    </item>
+    <item nodeId="node-1519">
+        <command xml:space="preserve">2</command>
+        <result xml:space="preserve">[Ask for the bill.]
+
+You: "Hand it over, Gavell."
+
+Gavell: "Here you are, Sir."
+
+Gavell gives the bill to you.
+
+Official Office
+Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
+
+Your senior advisor, Martin Gavell, stands patiently in front of your desk.
+
+You have possession of the healthcare bill.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1520"></child>
+        </children>
+    </item>
+    <item nodeId="node-1520">
+        <command xml:space="preserve">talk to gavell</command>
+        <result xml:space="preserve">Gavell: "You need to decide what to do with the healthcare bill, Sir."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1521"></child>
+        </children>
+    </item>
+    <item nodeId="node-1521">
+        <command xml:space="preserve">sign the bill</command>
+        <result xml:space="preserve">You sign the bill into law and an aid takes it away for safe keeping.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1522"></child>
+        </children>
+    </item>
+    <item nodeId="node-1522">
+        <command xml:space="preserve">undo examine the bill</command>
+        <result xml:space="preserve">I didn't understand that sentence.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1504">
+        <command xml:space="preserve">1</command>
+        <result xml:space="preserve">[Just grunt.]
+
+You grunt to indicate that he can continue.
+
+Gavell: "Here you are, Sir."
+
+Gavell gives the bill to you.
+
+Official Office
+Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
+
+Your senior advisor, Martin Gavell, stands patiently in front of your desk.
+
+You have possession of the healthcare bill.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1505"></child>
+            <child nodeId="node-1525"></child>
+            <child nodeId="node-1546"></child>
+        </children>
+    </item>
+    <item nodeId="node-1546">
+        <command xml:space="preserve">sign the bill</command>
+        <result xml:space="preserve">------
+
+TODAY'S NEWSPAPER FRONT PAGE
+
+Notable Healthcare Bill Passes
+
+In a surprising move, the country's new leader has passed the much debated healthcare bill. The passing of the bill has been welcomed by many opposing politicians, however there seems to be some dissatisfaction from the premier's core voter base.
+
+The shaking of the foundations of the Head of State's support has taken its toll. According to our latest calculations, his political power has sunk to 5/5 stars, moreover, his latest actions have raised questions around what this man really stands for.
+
+------ 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1547"></child>
+        </children>
+    </item>
+    <item nodeId="node-1547">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1525">
+        <command xml:space="preserve">examine bill</command>
+        <result xml:space="preserve">A bill that needs your approval if it is to survive. Something about funding for healthcare for the poorest and most needy citizens of this great country: Not something you are known for supporting.
+
+A space has been left for your signature below the body of the document.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1526"></child>
+        </children>
+    </item>
+    <item nodeId="node-1526">
+        <command xml:space="preserve">sign the bill</command>
+        <result xml:space="preserve">You sign the bill into law and an aid takes it away for safe keeping.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1527"></child>
+        </children>
+    </item>
+    <item nodeId="node-1527">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Official Office
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1528"></child>
+        </children>
+    </item>
+    <item nodeId="node-1528">
+        <command xml:space="preserve">eat the bill</command>
+        <result xml:space="preserve">You momentarily pause as you decide exactly what you want to do.
+
+1) Reject the bill.
+2) Destroy the bill.
+3) Destroy the bill with extreme prejudice.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1529"></child>
+        </children>
+    </item>
+    <item nodeId="node-1529">
+        <command xml:space="preserve">3</command>
+        <result xml:space="preserve">
+Gavell: "This won't go down well with the voters, Sir."
+
+You: "FUCK the voters."
+
+Official Office
+Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
+
+Your senior advisor, Martin Gavell, stands patiently in front of your desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1505">
+        <command xml:space="preserve">eat the bill</command>
+        <result xml:space="preserve">You momentarily pause as you decide exactly what you want to do.
+
+1) Reject the bill.
+2) Destroy the bill.
+3) Destroy the bill with extreme prejudice.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1506"></child>
+        </children>
+    </item>
+    <item nodeId="node-1506">
+        <command xml:space="preserve">3</command>
+        <result xml:space="preserve">
+
+...and spit on it.
+
+[Press any key]
+
+</result>
         <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1451">

@@ -12,7 +12,9 @@ When play begins, say "------
 
 TODAY'S NEWSPAPER FRONT PAGE
 
-In a shocking last minute swing, the country voted for a candidate who, only days ago, looked to be almost totally unelectable. The candidate only recently entered politics and now leads a fringe party, 'Imperium', which has never previously garnered more than a few percent of the vote.
+A Surprising New Leader
+
+In a shocking last minute swing, the country voted for a candidate who, only days ago, looked to be almost totally unelectable. The candidate only recently entered politics and has now led a fringe party to power. A party which has never previously garnered more than a few percent of the vote.
 
 Politics isn't what it once was. These are volatile times and the people are eager for a leader who can change things. It's not clear what the voters want - it's not even clear that *they* know what they want - but it's clear the status quo is not it.
 
@@ -89,7 +91,9 @@ The portraits are scenery in the official office. Description is "These are the 
 
 The chair of the head of state is scenery in the official office. Description is "Your chair of the Head of State isn't too far from looking like a throne. When you picked your furniture it was important that your choice sent a message, and your message was a clear one of power, wealth and ruthlessness."
 
-The healthcare bill is carried by Martin Gavell. Description is "It's an offical document. A bill that needs your approval if it is to survive. Something about funding for healthcare for the poorest and most needy citizens of this great country: Not something you are known for supporting.". The bill has a signedness called the state. The signedness of the bill is initially unsigned.
+The healthcare bill is carried by Martin Gavell. Description is "A bill that needs your approval if it is to survive. Something about additional funding for healthcare of the most needy citizens of this great country.
+
+A space has been left for your signature below the body of the document.". The bill has a signedness called the state. The signedness of the bill is initially unsigned.
 
 Martin Gavell is a man in the official office. "Your senior advisor, Martin Gavell, stands patiently in front of your desk.[if current_game_state is WaitingForIntroduction] It looks like he's waiting for you to speak to him.[end if][if player carries the bill]
 
@@ -102,7 +106,11 @@ Section - Introduction
 
 Instead of talking to Gavell:
 	If current_game_state is WaitingForIntroduction:
-		switch to cyoa at P-Introduction
+		switch to cyoa at P-Introduction;
+	else if player carries the bill:
+		say "Gavell: 'You need to decide what to do with the healthcare bill, Sir.'";
+	else:
+		say "Nothing to say springs to mind."
 	
 P-Introduction is a page. It is a one-off.
 "You nod to Gavell.
@@ -134,12 +142,28 @@ Section - The Signing
 Instead of signing the bill:
 	If current_game_state is not WaitingForIntroduction:
 		If the signedness of the bill is unsigned:
-			[TODO Some text about the press coming to see your surprising bill passing]
-			say "You sign the bill into law and an aid takes it away for safe keeping.";
 			now the signedness of the bill is signed;
-			[TODO Remove bill from game]
-			[TODO Newspaper headline - no change in power]
-			[TODO New game state]
+			remove the bill from play;
+			say "After having made sure as much media attention was paid to your upcoming action as possible, you sign the bill into law.
+			
+			[bracket]Press any key[close bracket]
+			
+			";
+			wait for any key;
+			decrease current political power by 1;
+			say "------
+
+				TODAY'S NEWSPAPER FRONT PAGE
+
+				Notable Healthcare Bill Passes
+				
+				In a surprising move, the country's new leader has passed the much debated healthcare bill. The passing of the bill has been welcomed by many opposing politicians, however there seems to be some dissatisfaction from the premier's core voter base. 
+
+				The shaking of the foundations of the Head of State's support has taken its toll. According to our latest calculations, his political power has dipped to [current political power]/[maximum political power] stars, moreover, his latest actions have raised questions around what this man really stands for. Perhaps this recent change of heart is the beginning of something much greater. Only time will tell.
+
+				------
+				
+				You look over your office once again. [description of office]";
 		otherwise:
 			say "Why would I do that?";
 	otherwise:
@@ -162,13 +186,19 @@ P-SpitOnBill is a page. It is for P-DestroyChoice.
 It flips to P-BillDestroyedWithPrejudice.
 The cdesc is "Destroy the bill with extreme prejudice.".
 A page-toggle rule for P-SpitOnBill:
-	say "You rip up the bill...
+	say "You put your cigarette out on the bill...
 	
 	[bracket]Press any key[close bracket]";
 	wait for any key;
 	say "
 	
-	...and spit on it
+	...then rip it up...
+	
+	[bracket]Press any key[close bracket]";
+	wait for any key;
+	say "
+	
+	...and spit on it.
 	
 	[bracket]Press any key[close bracket]
 	
@@ -176,23 +206,53 @@ A page-toggle rule for P-SpitOnBill:
 	wait for any key;
 
 P-BillDestroyed is a page. It is flipped to by P-ThrowAwayBill and P-DestroyBill. It is an end-page.
-"Gavell: 'This won't go down well with the house, Sir.'
-
-You: 'I don't care about the house'".
-[TODO Newspaper headline - no change in power]
 A page-toggle rule for P-BillDestroyed:
 	now the current_game_state is HandlingBriberyScandal;
-	remove the bill from play.
+	remove the bill from play;
+	say "Gavell: 'This won't go down well with the house, Sir.'
+
+You: 'I don't care about the house'
+
+[bracket]Press any key[close bracket]
+	";
+	wait for any key;
+say "
+------
+
+TODAY'S NEWSPAPER FRONT PAGE
+
+Key Healthcare Bill Rejected
+
+The Premier has decided to reject the latest healthcare reforms bill. Axing the the broadly popular bill has been seen as a show of strength and has sent waves rippling through the establishment. The new Head of State currently has a political power of [current political power]/[maximum political power] stars, according to our most recent polls and expert opinions.
+
+------
+".
 
 P-BillDestroyedWithPrejudice is a page. It is flipped to by P-SpitOnBill. It is an end-page.
-"Gavell: 'This won't go down well with the voters, Sir.'
-
-You: 'FUCK the voters.'".
-[TODO Newspaper headline - drop in power]
 A page-toggle rule for P-BillDestroyedWithPrejudice:
 	now the current_game_state is HandlingBriberyScandal;
 	decrease current political power by 1;
-	remove the bill from play.
+	remove the bill from play;
+	say "Gavell: 'This won't go down well with the voters, Sir.'
+
+You: 'FUCK the voters.'
+
+[bracket]Press any key[close bracket]
+	";
+	wait for any key;
+say "
+------
+
+TODAY'S NEWSPAPER FRONT PAGE
+
+Premier Spits on the Poor
+
+Leaks from inside the the office of our new leader suggest that he may have gone as far as spitting on the recent healthcare bill whilst refusing to sign it in a fit of rage.
+
+These leaks, which may yet transpire to be entirely false, have already damaged the new Head of State. According to our latest calculations, his political power has sunk to [current political power]/[maximum political power] stars, and there may be more fallout in store for him.
+
+------
+".
 
 Instead of eating the bill:
 	switch to cyoa at P-DestroyChoice
