@@ -154,6 +154,7 @@ You have possession of the healthcare bill.
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1464"></child>
             <child nodeId="node-1500"></child>
+            <child nodeId="node-1566"></child>
             <child nodeId="node-1461"></child>
             <child nodeId="node-1487"></child>
             <child nodeId="node-1457"></child>
@@ -426,6 +427,56 @@ Portraits of stern old white men hang on the walls, a huge candelier hangs down 
 The things some men have done to make it to this room...
 
 Your senior advisor, Martin Gavell, stands patiently in front of your desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1566">
+        <command xml:space="preserve">east bill</command>
+        <result xml:space="preserve">I only understood you as far as wanting to (go) east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1567"></child>
+        </children>
+    </item>
+    <item nodeId="node-1567">
+        <command xml:space="preserve">eat bill</command>
+        <result xml:space="preserve">You momentarily pause as you decide exactly what you want to do.
+
+1) Reject the bill.
+2) Destroy the bill.
+3) Destroy the bill with extreme prejudice.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1568"></child>
+        </children>
+    </item>
+    <item nodeId="node-1568">
+        <command xml:space="preserve">1</command>
+        <result xml:space="preserve">------
+
+TODAY'S NEWSPAPER FRONT PAGE
+
+Key Healthcare Bill Rejected
+
+The Premier has decided to reject the latest healthcare reforms bill. Axing the the broadly popular bill has been seen as a show of strength and has sent waves rippling through the establishment. The new Head of State currently has a political power of 5/5 stars, according to our most recent polls and expert opinions.
+
+------ 
+Official Office
+Portraits of stern old white men hang on the walls, a huge candelier hangs down from the ceiling the the middle of the room. A huge dark wooden desk sits in front of your chair.
+
+Your senior advisor, Martin Gavell, stands patiently in front of your desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1569"></child>
+        </children>
+    </item>
+    <item nodeId="node-1569">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

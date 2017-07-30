@@ -20621,21 +20621,21 @@ Array ActionHappened --> 0 0 0 0 0 0;
     (Global_Vars-->28) = I134_handlingbriberyscandal;
     ! [3: remove the bill from play]
     RemoveFromPlay(I146_healthcare_bill);
-    ! [4: say ~Gavell: 'This won't go down well with the house, Sir.'^^You: 'I don't care about the house'^^[bracket]Press any key[close bracket] ~]
+    ! [4: say ~Gavell: 'This won't go down well with the house, Sir.'^^You: 'I don't care about the house'^^[bracket]Press any key[close bracket]^^~]
     say__p=1;! [5: ~Gavell: 'This won't go down well with the house, Sir.'^^You: 'I don't care about the house'^^~]
     ParaContent(); print "Gavell: ~This won't go down well with the house, Sir.~^^You: ~I don't care about the house~^^";! [6: bracket]
     ParaContent(); print "[";! [7: ~Press any key~]
     ParaContent(); print "Press any key";! [8: close bracket]
-    ParaContent(); print "]";! [9: ~ ~]
-    ParaContent(); print " "; .L_Say315; .L_SayX315;! [10: wait for any key]
+    ParaContent(); print "]";! [9: ~^^~]
+    ParaContent(); print "^^"; .L_Say315; .L_SayX315;! [10: wait for any key]
     KeyPause();
-    ! [11: say ~ ------^^TODAY'S NEWSPAPER FRONT PAGE^^Key Healthcare Bill Rejected^^The Premier has decided to reject the latest healthcare reforms bill. Axing the the broadly popular bill has been seen as a show of strength and has sent waves rippling through the establishment. The new Head of State currently has a political power of [current political power]/[maximum political power] stars, according to our most recent polls and expert opinions.^^------ ~]
-    say__p=1;! [12: ~ ------^^TODAY'S NEWSPAPER FRONT PAGE^^Key Healthcare Bill Rejected^^The Premier has decided to reject the latest healthcare reforms bill. Axing the the broadly popular bill has been seen as a show of strength and has sent waves rippling through the establishment. The new Head of State currently has a political power of ~]
-    ParaContent(); print " ------^^TODAY'S NEWSPAPER FRONT PAGE^^Key Healthcare Bill Rejected^^The Premier has decided to reject the latest healthcare reforms bill. Axing the the broadly popular bill has been seen as a show of strength and has sent waves rippling through the establishment. The new Head of State currently has a political power of ";! [13: current political power]
+    ! [11: say ~------^^TODAY'S NEWSPAPER FRONT PAGE^^Key Healthcare Bill Rejected^^The Premier has decided to reject the latest healthcare reforms bill. Axing the the broadly popular bill has been seen as a show of strength and has sent waves rippling through the establishment. The new Head of State currently has a political power of [current political power]/[maximum political power] stars, according to our most recent polls and expert opinions.^^------^^~]
+    say__p=1;! [12: ~------^^TODAY'S NEWSPAPER FRONT PAGE^^Key Healthcare Bill Rejected^^The Premier has decided to reject the latest healthcare reforms bill. Axing the the broadly popular bill has been seen as a show of strength and has sent waves rippling through the establishment. The new Head of State currently has a political power of ~]
+    ParaContent(); print "------^^TODAY'S NEWSPAPER FRONT PAGE^^Key Healthcare Bill Rejected^^The Premier has decided to reject the latest healthcare reforms bill. Axing the the broadly popular bill has been seen as a show of strength and has sent waves rippling through the establishment. The new Head of State currently has a political power of ";! [13: current political power]
     ParaContent(); print (say__n=(Global_Vars-->27));! [14: ~/~]
     ParaContent(); print "/";! [15: maximum political power]
-    ParaContent(); print (say__n=(Global_Vars-->25));! [16: ~ stars, according to our most recent polls and expert opinions.^^------ ~]
-    ParaContent(); print " stars, according to our most recent polls and expert opinions.^^------ "; .L_Say316; .L_SayX316;} else if (debug_rules > 1) DB_Rule(R_899, 899, 'action');
+    ParaContent(); print (say__n=(Global_Vars-->25));! [16: ~ stars, according to our most recent polls and expert opinions.^^------^^~]
+    ParaContent(); print " stars, according to our most recent polls and expert opinions.^^------^^"; .L_Say316; .L_SayX316;} else if (debug_rules > 1) DB_Rule(R_899, 899, 'action');
     rfalse;
 ];
 ! No specific request
@@ -20649,21 +20649,21 @@ Array ActionHappened --> 0 0 0 0 0 0;
     (Global_Vars-->27) = (Global_Vars-->27) - 1;;
     ! [4: remove the bill from play]
     RemoveFromPlay(I146_healthcare_bill);
-    ! [5: say ~Gavell: 'This won't go down well with the voters, Sir.'^^You: 'FUCK the voters.'^^[bracket]Press any key[close bracket] ~]
+    ! [5: say ~Gavell: 'This won't go down well with the voters, Sir.'^^You: 'FUCK the voters.'^^[bracket]Press any key[close bracket]^^~]
     say__p=1;! [6: ~Gavell: 'This won't go down well with the voters, Sir.'^^You: 'FUCK the voters.'^^~]
     ParaContent(); print "Gavell: ~This won't go down well with the voters, Sir.~^^You: ~FUCK the voters.~^^";! [7: bracket]
     ParaContent(); print "[";! [8: ~Press any key~]
     ParaContent(); print "Press any key";! [9: close bracket]
-    ParaContent(); print "]";! [10: ~ ~]
-    ParaContent(); print " "; .L_Say317; .L_SayX317;! [11: wait for any key]
+    ParaContent(); print "]";! [10: ~^^~]
+    ParaContent(); print "^^"; .L_Say317; .L_SayX317;! [11: wait for any key]
     KeyPause();
-    ! [12: say ~ ------^^TODAY'S NEWSPAPER FRONT PAGE^^Premier Spits on the Poor^^Leaks from inside the the office of our new leader suggest that he may have gone as far as spitting on the recent healthcare bill whilst refusing to sign it in a fit of rage.^^These leaks, which may yet transpire to be entirely false, have already damaged the new Head of State. According to our latest calculations, his political power has sunk to [current political power]/[maximum political power] stars, and there may be more fallout in store for him.^^------ ~]
-    say__p=1;! [13: ~ ------^^TODAY'S NEWSPAPER FRONT PAGE^^Premier Spits on the Poor^^Leaks from inside the the office of our new leader suggest that he may have gone as far as spitting on the recent healthcare bill whilst refusing to sign it in a fit of rage.^^These leaks, which may yet transpire to be entirely false, have already damaged the new Head of State. According to our latest calculations, his political power has sunk to ~]
-    ParaContent(); print " ------^^TODAY'S NEWSPAPER FRONT PAGE^^Premier Spits on the Poor^^Leaks from inside the the office of our new leader suggest that he may have gone as far as spitting on the recent healthcare bill whilst refusing to sign it in a fit of rage.^^These leaks, which may yet transpire to be entirely false, have already damaged the new Head of State. According to our latest calculations, his political power has sunk to ";! [14: current political power]
+    ! [12: say ~------^^TODAY'S NEWSPAPER FRONT PAGE^^Premier Spits on the Everyman^^Leaks from inside the the office of our new leader suggest that he may have gone as far as literally spitting on the recent healthcare bill whilst refusing to sign it in a fit of rage.^^These leaks, which may yet transpire to be entirely false, have already damaged the new Head of State. According to our latest calculations, his political power has sunk to [current political power]/[maximum political power] stars, and there may be more fallout in store for him.^^------^^~]
+    say__p=1;! [13: ~------^^TODAY'S NEWSPAPER FRONT PAGE^^Premier Spits on the Everyman^^Leaks from inside the the office of our new leader suggest that he may have gone as far as literally spitting on the recent healthcare bill whilst refusing to sign it in a fit of rage.^^These leaks, which may yet transpire to be entirely false, have already damaged the new Head of State. According to our latest calculations, his political power has sunk to ~]
+    ParaContent(); print "------^^TODAY'S NEWSPAPER FRONT PAGE^^Premier Spits on the Everyman^^Leaks from inside the the office of our new leader suggest that he may have gone as far as literally spitting on the recent healthcare bill whilst refusing to sign it in a fit of rage.^^These leaks, which may yet transpire to be entirely false, have already damaged the new Head of State. According to our latest calculations, his political power has sunk to ";! [14: current political power]
     ParaContent(); print (say__n=(Global_Vars-->27));! [15: ~/~]
     ParaContent(); print "/";! [16: maximum political power]
-    ParaContent(); print (say__n=(Global_Vars-->25));! [17: ~ stars, and there may be more fallout in store for him.^^------ ~]
-    ParaContent(); print " stars, and there may be more fallout in store for him.^^------ "; .L_Say318; .L_SayX318;} else if (debug_rules > 1) DB_Rule(R_900, 900, 'action');
+    ParaContent(); print (say__n=(Global_Vars-->25));! [17: ~ stars, and there may be more fallout in store for him.^^------^^~]
+    ParaContent(); print " stars, and there may be more fallout in store for him.^^------^^"; .L_Say318; .L_SayX318;} else if (debug_rules > 1) DB_Rule(R_900, 900, 'action');
     rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------

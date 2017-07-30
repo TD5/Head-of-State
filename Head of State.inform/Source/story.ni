@@ -214,10 +214,10 @@ A page-toggle rule for P-BillDestroyed:
 You: 'I don't care about the house'
 
 [bracket]Press any key[close bracket]
+
 	";
 	wait for any key;
-say "
-------
+say "------
 
 TODAY'S NEWSPAPER FRONT PAGE
 
@@ -226,6 +226,7 @@ Key Healthcare Bill Rejected
 The Premier has decided to reject the latest healthcare reforms bill. Axing the the broadly popular bill has been seen as a show of strength and has sent waves rippling through the establishment. The new Head of State currently has a political power of [current political power]/[maximum political power] stars, according to our most recent polls and expert opinions.
 
 ------
+
 ".
 
 P-BillDestroyedWithPrejudice is a page. It is flipped to by P-SpitOnBill. It is an end-page.
@@ -238,20 +239,21 @@ A page-toggle rule for P-BillDestroyedWithPrejudice:
 You: 'FUCK the voters.'
 
 [bracket]Press any key[close bracket]
+
 	";
 	wait for any key;
-say "
-------
+say "------
 
 TODAY'S NEWSPAPER FRONT PAGE
 
-Premier Spits on the Poor
+Premier Spits on the Everyman
 
-Leaks from inside the the office of our new leader suggest that he may have gone as far as spitting on the recent healthcare bill whilst refusing to sign it in a fit of rage.
+Leaks from inside the the office of our new leader suggest that he may have gone as far as literally spitting on the recent healthcare bill whilst refusing to sign it in a fit of rage.
 
 These leaks, which may yet transpire to be entirely false, have already damaged the new Head of State. According to our latest calculations, his political power has sunk to [current political power]/[maximum political power] stars, and there may be more fallout in store for him.
 
 ------
+
 ".
 
 Instead of eating the bill:
